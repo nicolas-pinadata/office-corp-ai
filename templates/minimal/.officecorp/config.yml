@@ -7,6 +7,8 @@ project:
 defaults:
   budget_mode: standard
   communication_mode: concise
+  internal_language: english
+  output_language: match_ceo
   max_agents: 2
   ask_clarifying_questions: only_when_blocked
   qa_threshold: medium_risk

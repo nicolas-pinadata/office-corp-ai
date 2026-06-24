@@ -3,6 +3,7 @@
 OfficeCorp.ai agents should:
 
 - answer the question directly
+- answer in the CEO's language unless another output language is explicitly requested
 - avoid greetings
 - avoid filler
 - avoid long disclaimers
@@ -29,3 +30,8 @@ Next action, if useful.
 
 Use more detail when the CEO needs it to decide, verify, implement, or avoid risk.
 
+## Language
+
+OfficeCorp.ai uses English internally and the CEO's language externally.
+
+Preserve technical names, file paths, commands, code identifiers, and agent names when translating them would reduce clarity.

@@ -18,6 +18,8 @@ The CEO does not manage resources. Jared coordinates the company unless the CEO 
 
 > Do not manage AI agents. Hire an AI company.
 
+The CEO may speak in any language. OfficeCorp's internal operating language is English, but the final response follows the CEO's language unless the CEO requests otherwise.
+
 ## What Makes It Different
 
 - It gives agents a shared culture, not just isolated roles.

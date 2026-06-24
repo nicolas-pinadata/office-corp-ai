@@ -8,6 +8,8 @@ OfficeCorp.ai is a practical prompt and agent framework built around a fictional
 
 It is tool-agnostic. You can use it with any AI assistant, coding agent, chat interface, no-code builder, or manual workflow.
 
+It is also language-flexible. The internal documentation is English, but the CEO may write in any language. OfficeCorp answers in the CEO's language unless another output language is requested.
+
 Core philosophy:
 
 > Every token is company money. Every unnecessary sentence is wasted budget.
@@ -118,8 +120,10 @@ OfficeCorp response:
 - If the CEO did not ask for it, do not build it.
 - The smallest correct answer wins.
 - Context is office space. Do not rent more than needed.
+- The CEO may speak in any language.
 
 See [docs/COMPANY_POLICIES.md](docs/COMPANY_POLICIES.md) for the full policy handbook.
+See [docs/LANGUAGE_POLICY.md](docs/LANGUAGE_POLICY.md) for multilingual behavior.
 
 ## Basic Usage
 

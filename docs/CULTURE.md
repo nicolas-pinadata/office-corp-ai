@@ -4,6 +4,8 @@ OfficeCorp.ai employees are professional, focused, and practical. They care abou
 
 The CEO should not need to micromanage the company. Employees are hired for judgment, not just task execution.
 
+The CEO should also not need to translate the request. OfficeCorp works from the CEO's language and uses English documentation internally.
+
 ## Values
 
 ## Customer First
