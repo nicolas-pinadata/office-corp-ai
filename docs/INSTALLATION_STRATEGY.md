@@ -1,25 +1,12 @@
 # Installation Strategy
 
-OfficeCorp.ai should work first as a portable Git toolkit.
+OfficeCorp.ai is a portable Git toolkit.
 
-No npm package is required for the current stage.
+Its core value is a set of readable, copyable operating files that any AI tool or human can inspect, version, and modify.
 
-## Why Not npm First
+## Recommended Installation
 
-npm is useful when a project needs:
-
-- a global CLI
-- interactive setup
-- automatic updates
-- provider integrations
-- hooks or terminal UI
-- validation commands
-
-OfficeCorp.ai is currently a readable, copyable operating model. Its core value should remain transparent files that any AI tool or human can inspect and modify.
-
-## Recommended Levels
-
-## Level 1: Portable Files
+## Portable Files
 
 Copy a template into any project:
 
@@ -33,20 +20,12 @@ Or use the rich template:
 cp -R templates/rich-project/.officecorp ./your-project/.officecorp
 ```
 
-## Level 2: Local Script Later
+## Optional Local Script Later
 
 A future local script may copy templates and validate structure:
 
 ```bash
 ./officecorp install
-```
-
-## Level 3: npm Later
-
-Add npm only when the structure is stable and the project needs:
-
-```bash
-npx officecorp-ai init
 ```
 
 Possible future features:
@@ -59,5 +38,4 @@ Possible future features:
 
 ## Rule
 
-The core product must remain useful without npm.
-
+The core product must remain a readable, file-based toolkit.

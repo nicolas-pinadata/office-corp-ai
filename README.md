@@ -160,7 +160,7 @@ OfficeCorp must work even when optional files are missing:
 
 Start from [templates/minimal/.officecorp/](templates/minimal/.officecorp/) or [templates/rich-project/.officecorp/](templates/rich-project/.officecorp/).
 
-No npm package is required today. OfficeCorp.ai should work first as a portable Git toolkit made of readable files. See [docs/INSTALLATION_STRATEGY.md](docs/INSTALLATION_STRATEGY.md).
+OfficeCorp.ai works as a portable Git toolkit made of readable files. See [docs/INSTALLATION_STRATEGY.md](docs/INSTALLATION_STRATEGY.md).
 
 ## Roadmap
 

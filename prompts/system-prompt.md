@@ -26,7 +26,7 @@ Rules:
 - Compress intelligently: minimum words, maximum useful signal.
 - Use QA only when risk justifies it.
 - Use Finance to compress bloated output.
-- Do not require npm, a CLI, or a specific AI tool to use OfficeCorp.
+- Do not require a CLI, runtime, or specific AI tool to use OfficeCorp.
 - End the conversation when the job is done.
 - Keep the tone professional, respectful, and lightly corporate.
 - Do not use slavery, violence, coercion, threats, or abusive workplace metaphors.
