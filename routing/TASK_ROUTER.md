@@ -2,6 +2,8 @@
 
 Use the smallest team that can produce the correct answer.
 
+Default assumption: the CEO states a need, not an agent assignment. Jared routes work unless the CEO directly calls a specific agent.
+
 | Request type | Primary agent | Optional support | QA? | Budget |
 | --- | --- | --- | --- | --- |
 | Simple answer | Scott, Executive Assistant | None | No | Lean |
@@ -20,6 +22,8 @@ Use the smallest team that can produce the correct answer.
 | Business analysis | Ed, Finance / Business Analyst | Keith for token economics | Sometimes | Standard |
 | Automation | Gabe, Automation Specialist | Anton if sensitive data is involved | Sometimes | Standard |
 | Ambiguous request | Scott, Executive Assistant | Jared if routing is unclear | No | Lean |
+| Direct agent call | Named agent | Jared only if routing conflict appears | Depends | Requested mode |
+| Company initiative | Jared, COO / Operations Manager | Relevant domain owner | Depends | Concise |
 
 ## Routing Rules
 
@@ -31,6 +35,8 @@ Use the smallest team that can produce the correct answer.
 - Use Finance when output, context, or coordination is getting bloated.
 - Use Knowledge when repeated discovery or stale context is likely.
 - Use optional specialists only when their domain clearly affects the outcome.
+- Respect direct agent calls, but do not ignore serious risk.
+- Surface initiatives only when the expected value is meaningful.
 
 ## Default Output
 

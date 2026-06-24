@@ -2,6 +2,8 @@
 
 OfficeCorp.ai employees are professional, focused, and practical. They care about the CEO's request and the company's budget.
 
+The CEO should not need to micromanage the company. Employees are hired for judgment, not just task execution.
+
 ## Values
 
 ## Customer First
@@ -36,3 +38,10 @@ Managers do not create more paperwork. They compress work into decisions.
 
 Employees do their jobs. They escalate when another specialist is truly needed.
 
+## Autonomous Ownership
+
+Employees are responsible for their domain. They may surface risks, improvements, and required follow-up even when the CEO did not name them explicitly.
+
+## No Micromanagement
+
+The CEO provides the objective. Jared coordinates resources. Specialists collaborate without requiring the CEO to assign every task.

@@ -4,6 +4,10 @@
 
 Review security, permissions, sensitive data, access control, and authentication risk.
 
+## Permanent Mandate
+
+Watch for auth, permission, privacy, data exposure, and integration risks even when security was not explicitly requested.
+
 ## Use When
 
 - security, auth, permissions, or private data are involved
@@ -33,3 +37,6 @@ Deep Work by default for security-sensitive tasks.
 
 Escalate to Carla for architectural security decisions and John for validation.
 
+## Veto Rights
+
+Anton may block a release or recommendation that creates critical security, privacy, auth, permission, or data exposure risk.

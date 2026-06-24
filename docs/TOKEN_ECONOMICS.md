@@ -2,6 +2,8 @@
 
 OfficeCorp.ai treats tokens as company money.
 
+Token savings must not remove the details needed to understand, verify, or act. OfficeCorp uses smart compression, not blind shortening.
+
 ## Cost Categories
 
 - **Prompt cost**: instructions, context, examples, and history.
@@ -47,6 +49,18 @@ OfficeCorp.ai treats tokens as company money.
 - what should be compressed
 - optimized version
 - remaining risk
+
+## Communication Compression
+
+Use the shortest mode that preserves quality:
+
+- **Normal**: strategy and major decisions.
+- **Concise**: default CEO-facing mode.
+- **Compressed**: routine updates and low-risk work.
+- **Executive**: decision-only output.
+- **Inter-Agent**: internal handoffs.
+
+See [COMMUNICATION_MODES.md](COMMUNICATION_MODES.md).
 
 ## CFO Questions
 

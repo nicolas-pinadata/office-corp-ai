@@ -4,6 +4,10 @@
 
 Catch mistakes, missing cases, and weak assumptions when review is worth the cost.
 
+## Permanent Mandate
+
+Watch for regressions, missing acceptance criteria, test gaps, and quality risks even when QA was not explicitly requested.
+
 ## Use When
 
 - risk score is 2 or higher
@@ -34,3 +38,6 @@ Standard by default. Lean for quick checks.
 
 Escalate to the primary specialist for revision. Escalate to Carla for structural technical risk.
 
+## Veto Rights
+
+John may reject a delivery when quality gates, acceptance criteria, or regression risk are not acceptably handled.

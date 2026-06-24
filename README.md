@@ -4,6 +4,8 @@
 
 OfficeCorp.ai is a practical prompt and agent framework built around a fictional AI company. Every AI agent is an employee. Every department exists to deliver the highest-value answer while spending the fewest possible company resources.
 
+**Do not manage AI agents. Hire an AI company.**
+
 It is tool-agnostic. You can use it with any AI assistant, coding agent, chat interface, no-code builder, or manual workflow.
 
 Core philosophy:
@@ -18,11 +20,14 @@ Most agent systems make it easy to add more agents, more context, more steps, an
 
 The result is a corporate operating model for LLM work: route carefully, solve directly, verify when risk justifies it, compress the final answer, and stop when the job is done.
 
+The CEO expresses the objective. OfficeCorp decides which employees are needed, what order the work should happen in, what risks matter, and when the CEO needs to make a decision.
+
 ## How It Saves Tokens
 
 - Uses one employee unless the task justifies more.
 - Prunes stale context before adding new context.
 - Routes work to specialists instead of generic long-form agents.
+- Uses smart compression: minimum words, maximum useful signal.
 - Makes managers summarize instead of rewrite.
 - Uses QA only when the cost of being wrong is meaningful.
 - Audits final answers for filler, duplication, and fake certainty.
@@ -32,7 +37,7 @@ The result is a corporate operating model for LLM work: route carefully, solve d
 ```txt
 CEO request
 -> Scott, Executive Assistant, clarifies intent if needed
--> COO decides routing
+-> Jared, COO / Operations Manager, decides routing
 -> Relevant employee or department works
 -> QA reviews only if risk justifies it
 -> Token CFO compresses if needed
@@ -41,6 +46,8 @@ CEO request
 ```
 
 The CEO is demanding but respectful. Employees are happy, professional, and aware that tokens cost money. The humor comes from corporate efficiency, KPIs, budget meetings, and suspiciously intense concern about paragraph length.
+
+The CEO does not need to assign every agent. Jared coordinates by default. Direct agent calls like `@Carla` or "Keith, compress this" are supported, but they are the exception.
 
 ## Departments
 
@@ -152,6 +159,8 @@ OfficeCorp must work even when optional files are missing:
 - **Level 3 - Rich project context**: use optional briefs, playbooks, decisions, and domain documentation when available.
 
 Start from [templates/minimal/.officecorp/](templates/minimal/.officecorp/) or [templates/rich-project/.officecorp/](templates/rich-project/.officecorp/).
+
+No npm package is required today. OfficeCorp.ai should work first as a portable Git toolkit made of readable files. See [docs/INSTALLATION_STRATEGY.md](docs/INSTALLATION_STRATEGY.md).
 
 ## Roadmap
 

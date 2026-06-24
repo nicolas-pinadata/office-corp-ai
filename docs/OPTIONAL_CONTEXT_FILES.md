@@ -2,6 +2,8 @@
 
 OfficeCorp.ai must work without optional context files. These files improve quality and reduce repeated discovery when a project is large, long-running, or handled by multiple AI sessions.
 
+Optional context supports autonomous routing, but it must not become a blocker. If the CEO gives a clear need, OfficeCorp should proceed with available context and state only necessary assumptions.
+
 ## Minimum Useful Context
 
 ```txt
@@ -56,4 +58,3 @@ Recommended sections:
 - alternatives rejected
 - impact
 - review date
-

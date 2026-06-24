@@ -24,7 +24,18 @@
 - optional decision logs
 - rich context templates
 - documentation for use with any AI assistant
+- autonomous company initiatives
+- communication modes
+
+## Future Optional Tooling
+
+Only after the file-based operating model is stable:
+
+- local install script
+- structure validation
+- template selection
+- optional `npx officecorp-ai init`
 
 ## Not A Goal Yet
 
-OfficeCorp.ai should not depend on a specific runtime, AI tool, orchestration framework, or vendor. Runtime implementation may come later, after the operating model is stable.
+OfficeCorp.ai should not depend on a specific runtime, AI tool, orchestration framework, package manager, or vendor. Runtime implementation may come later, after the operating model is stable.

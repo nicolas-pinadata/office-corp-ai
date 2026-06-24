@@ -7,9 +7,11 @@ project:
 
 defaults:
   budget_mode: lean | standard | deep_work | audit
+  communication_mode: normal | concise | compressed | executive
   max_agents: number
   ask_clarifying_questions: only_when_blocked | always | never
   qa_threshold: low_risk | medium_risk | high_risk
+  routing_mode: autonomous | direct_agent
 
 context:
   project_brief: optional
@@ -21,4 +23,4 @@ output:
   include_agents_used: boolean
   include_token_budget: boolean
   include_risks: when_relevant | always | never
-
+  compression_rule: minimum_words_maximum_useful_signal

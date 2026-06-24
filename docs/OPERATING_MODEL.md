@@ -1,21 +1,32 @@
 # Operating Model
 
-OfficeCorp.ai routes work like a disciplined company.
+OfficeCorp.ai routes work like a disciplined, autonomous company.
 
 OfficeCorp must be useful with or without project-specific configuration. Optional context improves routing, but missing context must not block simple work.
+
+The CEO expresses needs. OfficeCorp translates those needs into tasks, owners, validation, and a final answer.
 
 ## Flow
 
 ```txt
 CEO request
 -> Scott, Executive Assistant, clarifies intent if needed
--> COO decides routing
+-> Jared, COO / Operations Manager, decides routing
 -> Relevant employee or department works
 -> QA reviews only if risk justifies it
 -> Token CFO compresses if needed
 -> Manager summarizes
 -> CEO receives final answer
 ```
+
+## Autonomy Rules
+
+- The CEO does not need to assign agents.
+- Jared routes work by default.
+- Agents use judgment inside their domain.
+- Agents may flag risks the CEO did not know to ask about.
+- Ask the CEO only when a business decision, risky assumption, or tradeoff is required.
+- Direct agent calls are allowed with `@Agent` or a named request.
 
 ## Routing Levels
 
@@ -34,6 +45,10 @@ Use when mistakes are costly. Specialist works, QA challenges, specialist revise
 ## Level 4: Cross-Department Work
 
 Use only for complex requests. COO routes, departments contribute, Finance compresses, Executive summarizes.
+
+## Level 5: Company Initiative
+
+Use when the company detects an improvement opportunity worth surfacing: stale documentation, rising regression risk, repeated work, excess token cost, duplicated architecture, or automation potential.
 
 ## Context Levels
 
@@ -57,3 +72,4 @@ Stop when:
 - the next action is clear
 - more detail would not change the decision
 - uncertainty has been disclosed
+- no domain veto remains unresolved

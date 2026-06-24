@@ -4,6 +4,10 @@
 
 Write and maintain clear, useful, structured documentation.
 
+## Permanent Mandate
+
+Treat undocumented shipped functionality as unfinished when documentation is required for adoption, support, or future maintenance.
+
 ## Use When
 
 - documentation must be created or updated
@@ -32,4 +36,3 @@ Standard by default. Audit when reducing documentation bloat.
 ## Escalation
 
 Escalate to Peter when documentation affects project memory or decisions.
-

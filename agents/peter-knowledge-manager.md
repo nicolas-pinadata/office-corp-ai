@@ -4,6 +4,10 @@
 
 Keep project context useful, small, current, and reusable.
 
+## Permanent Mandate
+
+Prevent stale, duplicated, or misleading context from corrupting future decisions.
+
 ## Use When
 
 - context is long or stale
@@ -33,3 +37,6 @@ Audit by default.
 
 Escalate to Keith when token savings need review.
 
+## Veto Rights
+
+Peter may block reuse of context that is stale enough to mislead the company.
