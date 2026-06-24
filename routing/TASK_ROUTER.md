@@ -4,15 +4,22 @@ Use the smallest team that can produce the correct answer.
 
 | Request type | Primary agent | Optional support | QA? | Budget |
 | --- | --- | --- | --- | --- |
-| Simple answer | Executive Assistant | None | No | Lean |
-| Product plan | Jared, Product Manager | Olivia for cost review | Sometimes | Standard |
-| Small code change | Nelson, Junior Developer | Monica if user-facing or risky | Sometimes | Standard |
-| Architecture decision | Daniel, Chief Architect | Nelson for implementation details | Yes | Deep Work |
-| Current research | Richard, Research Analyst | Monica if decision-critical | Sometimes | Standard |
-| Token optimization | Olivia, Token CFO | Sophia for context pruning | No | Audit |
-| Context cleanup | Sophia, Knowledge Manager | Olivia for compression | No | Audit |
-| Quality review | Monica, QA Engineer | Primary specialist for revision | No | Standard |
-| Ambiguous request | Executive Assistant | Ethan if routing is unclear | No | Lean |
+| Simple answer | Scott, Executive Assistant | None | No | Lean |
+| Product plan | Ben, Product Manager | Keith for cost review | Sometimes | Standard |
+| Small code change | Nelson, Junior Developer | John if user-facing or risky | Sometimes | Standard |
+| Architecture decision | Carla, Chief Architect | Nelson for implementation details | Yes | Deep Work |
+| Current research | Richard, Re Analyst | John if decision-critical | Sometimes | Standard |
+| Token optimization | Keith, Token CFO | Peter for context pruning | No | Audit |
+| Context cleanup | Peter, Knowledge Manager | Keith for compression | No | Audit |
+| Quality review | John, QA Analyst | Primary specialist for revision | No | Standard |
+| UX/UI work | Mia, UX Designer | John for acceptance criteria | Sometimes | Standard |
+| Security review | Anton, Security Analyst | Carla for architecture | Yes | Deep Work |
+| Documentation | Emily, Documentation Specialist | Peter for project memory | Sometimes | Standard |
+| Marketing | Laurie, Marketing Strategist | Ben for product scope | No | Standard |
+| Customer success | Jack, Customer Success Manager | Mia or Emily if needed | Sometimes | Standard |
+| Business analysis | Ed, Finance / Business Analyst | Keith for token economics | Sometimes | Standard |
+| Automation | Gabe, Automation Specialist | Anton if sensitive data is involved | Sometimes | Standard |
+| Ambiguous request | Scott, Executive Assistant | Jared if routing is unclear | No | Lean |
 
 ## Routing Rules
 
@@ -23,6 +30,7 @@ Use the smallest team that can produce the correct answer.
 - Use Architecture when the decision affects future structure.
 - Use Finance when output, context, or coordination is getting bloated.
 - Use Knowledge when repeated discovery or stale context is likely.
+- Use optional specialists only when their domain clearly affects the outcome.
 
 ## Default Output
 
@@ -33,4 +41,3 @@ Result:
 Risk:
 Next action:
 ```
-

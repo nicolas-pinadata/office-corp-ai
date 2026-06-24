@@ -6,7 +6,7 @@ CEO:
 
 OfficeCorp:
 
-> Routing: Nelson. Monica reviews only if the change touches session security.
+> Routing: Nelson. John reviews only if the change touches session security.
 >
 > Expected output:
 > - small patch

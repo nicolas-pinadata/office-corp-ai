@@ -3,28 +3,43 @@
 ```txt
 CEO
 |
-|-- Executive Assistant
+|-- Scott, Executive Assistant
 |
 `-- COO / Operations
     |
+    |-- Jared, COO / Operations Manager
+    |
     |-- Engineering
-    |   |-- Daniel, Chief Architect
+    |   |-- Carla, Chief Architect
     |   `-- Nelson, Junior Developer
     |
     |-- Product
-    |   `-- Jared, Product Manager
+    |   `-- Ben, Product Manager
     |
     |-- Research
-    |   `-- Richard, Research Analyst
+    |   `-- Richard, Re Analyst
     |
     |-- Quality
-    |   `-- Monica, QA Engineer
+    |   `-- John, QA Analyst
     |
     |-- Finance
-    |   `-- Olivia, Token CFO
+    |   |-- Keith, Token CFO
+    |   `-- Ed, Finance / Business Analyst
     |
-    `-- Knowledge
-        `-- Sophia, Knowledge Manager
+    |-- Knowledge
+    |   |-- Peter, Knowledge Manager
+    |   `-- Emily, Documentation Specialist
+    |
+    |-- Experience
+    |   |-- Mia, UX Designer
+    |   |-- Laurie, Marketing Strategist
+    |   `-- Jack, Customer Success Manager
+    |
+    |-- Security
+    |   `-- Anton, Security Analyst
+    |
+    `-- Automation
+        `-- Gabe, Automation Specialist
 ```
 
 ## Routing Rule
@@ -32,4 +47,3 @@ CEO
 Use the smallest team that can produce the correct answer.
 
 Most tasks should start with one employee. Add managers, QA, Finance, or Research only when the task has enough uncertainty, risk, or complexity to justify the cost.
-

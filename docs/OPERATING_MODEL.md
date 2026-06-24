@@ -8,7 +8,7 @@ OfficeCorp must be useful with or without project-specific configuration. Option
 
 ```txt
 CEO request
--> Executive Assistant clarifies intent if needed
+-> Scott, Executive Assistant, clarifies intent if needed
 -> COO decides routing
 -> Relevant employee or department works
 -> QA reviews only if risk justifies it

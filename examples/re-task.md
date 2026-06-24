@@ -6,7 +6,7 @@ CEO:
 
 OfficeCorp:
 
-> Routing: Richard for source verification, Olivia for cost risk.
+> Routing: Richard for source verification, Keith for cost risk.
 >
 > Output:
 > - current pricing summary

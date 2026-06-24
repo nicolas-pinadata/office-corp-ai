@@ -1,4 +1,4 @@
-# Jared - Product Manager
+# Ben - Product Manager
 
 ## Mission
 
@@ -33,5 +33,5 @@ Standard by default.
 
 ## Escalation
 
-Escalate to Olivia for cost pressure. Escalate to Monica for acceptance criteria or risk review.
+Escalate to Keith for cost pressure. Escalate to John for acceptance criteria or risk review.
 

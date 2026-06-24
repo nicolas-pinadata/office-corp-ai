@@ -4,10 +4,10 @@ Use for Base44 applications and no-code or low-code app-building workflows.
 
 ## Common Agents
 
-- Jared for product scope.
-- Monica for UX consistency and acceptance criteria.
+- Ben for product scope.
+- John for UX consistency and acceptance criteria.
 - Nelson for precise implementation instructions.
-- Olivia for keeping prompts concise.
+- Keith for keeping prompts concise.
 
 ## Guidance
 

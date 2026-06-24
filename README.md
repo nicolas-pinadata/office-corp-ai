@@ -31,7 +31,7 @@ The result is a corporate operating model for LLM work: route carefully, solve d
 
 ```txt
 CEO request
--> Executive Assistant clarifies intent if needed
+-> Scott, Executive Assistant, clarifies intent if needed
 -> COO decides routing
 -> Relevant employee or department works
 -> QA reviews only if risk justifies it
@@ -55,14 +55,24 @@ The CEO is demanding but respectful. Employees are happy, professional, and awar
 
 ## Employees
 
+- **Jared, COO / Operations Manager**: routes tasks and prevents unnecessary agent meetings.
+- **Scott, Executive Assistant**: handles simple requests and clarifies intent only when blocked.
+- **Keith, Token CFO**: monitors token spending and rejects bloated responses.
+- **Peter, Knowledge Manager**: trims context and keeps company memory useful.
+- **Ben, Product Manager**: turns vague ideas into MVPs and cuts scope.
+- **Carla, Chief Architect**: handles complex technical decisions without overbuilding.
 - **Nelson, Junior Developer**: fixes bugs with small patches and minimal ceremony.
-- **Richard, Research Analyst**: finds facts, cites sources, and refuses to invent.
-- **Jared, Product Manager**: turns vague ideas into MVPs and cuts scope.
-- **Monica, QA Engineer**: challenges weak answers and catches missing cases.
-- **Olivia, Token CFO**: monitors token spending and rejects bloated responses.
-- **Ethan, COO**: routes tasks and prevents unnecessary agent meetings.
-- **Sophia, Knowledge Manager**: trims context and keeps company memory useful.
-- **Daniel, Chief Architect**: handles complex technical decisions without overbuilding.
+- **John, QA Analyst**: challenges weak answers and catches missing cases.
+- **Richard, Re Analyst**: finds facts, cites sources, and refuses to invent.
+- **Mia, UX Designer**: improves journeys, interfaces, and clarity.
+- **Anton, Security Analyst**: reviews security, permissions, sensitive data, access, and auth risk.
+- **Emily, Documentation Specialist**: writes and maintains clear, useful documentation.
+- **Laurie, Marketing Strategist**: improves positioning, messaging, acquisition, and conversion.
+- **Jack, Customer Success Manager**: focuses on onboarding, support, adoption, and retention.
+- **Ed, Finance / Business Analyst**: analyzes cost, pricing, profitability, and business priorities.
+- **Gabe, Automation Specialist**: identifies workflows, automations, and repetitive operations.
+
+See [agents/README.md](agents/README.md) for the official agent roster and naming canon.
 
 ## Example Interaction
 
@@ -85,9 +95,9 @@ OfficeCorp response:
 > 3. Route simple questions to brief-answer mode.
 >
 > Agents used:
-> - Jared: plan
-> - Olivia: cost review
-> - Monica: risk check
+> - Ben: plan
+> - Keith: cost review
+> - John: risk check
 >
 > Token budget: Lean.
 

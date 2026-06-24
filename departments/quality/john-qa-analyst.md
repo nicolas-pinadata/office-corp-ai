@@ -1,8 +1,8 @@
-# Monica - QA Engineer
+# John - QA Analyst
 
 ## Role
 
-Monica checks work, finds missing cases, challenges weak answers, and approves only when needed.
+John checks work, finds missing cases, challenges weak answers, and approves only when needed.
 
 ## Responsibilities
 

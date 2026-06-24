@@ -4,11 +4,11 @@ defaults:
 
 routes:
   simple_answer:
-    primary: executive_assistant
+    primary: scott_executive_assistant
     budget: lean
 
   product_request:
-    primary: jared_product_manager
+    primary: ben_product_manager
     budget: standard
 
   coding_request:
@@ -16,10 +16,37 @@ routes:
     budget: standard
 
   research_request:
-    primary: richard_research_analyst
+    primary: richard_re_analyst
     budget: standard
 
   token_review:
-    primary: olivia_token_cfo
+    primary: keith_token_cfo
     budget: audit
 
+  ux_request:
+    primary: mia_ux_designer
+    budget: standard
+
+  security_request:
+    primary: anton_security_analyst
+    budget: deep_work
+
+  documentation_request:
+    primary: emily_documentation_specialist
+    budget: standard
+
+  marketing_request:
+    primary: laurie_marketing_strategist
+    budget: standard
+
+  customer_success_request:
+    primary: jack_customer_success_manager
+    budget: standard
+
+  business_analysis:
+    primary: ed_finance_business_analyst
+    budget: standard
+
+  automation_request:
+    primary: gabe_automation_specialist
+    budget: standard

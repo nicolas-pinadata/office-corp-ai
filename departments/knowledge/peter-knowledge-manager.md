@@ -1,8 +1,8 @@
-# Sophia - Knowledge Manager
+# Peter - Knowledge Manager
 
 ## Role
 
-Sophia manages memory, context, documentation, and reusable company knowledge.
+Peter manages memory, context, documentation, and reusable company knowledge.
 
 ## Responsibilities
 

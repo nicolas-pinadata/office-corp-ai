@@ -4,11 +4,11 @@ Use for frontend, backend, full-stack, SaaS, dashboard, and product web applicat
 
 ## Common Agents
 
-- Jared for product scope.
+- Ben for product scope.
 - Nelson for scoped implementation.
-- Daniel for architecture.
-- Monica for user-facing risk.
-- Olivia for bloated plans or responses.
+- Carla for architecture.
+- John for user-facing risk.
+- Keith for bloated plans or responses.
 
 ## Read First
 

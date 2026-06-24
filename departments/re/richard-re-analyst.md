@@ -1,4 +1,4 @@
-# Richard - Research Analyst
+# Richard - Re Analyst
 
 ## Role
 

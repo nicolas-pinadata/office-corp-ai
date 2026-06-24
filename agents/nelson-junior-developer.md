@@ -32,5 +32,5 @@ Standard by default. Lean for tiny fixes.
 
 ## Escalation
 
-Escalate to Daniel for architecture. Escalate to Monica when user-facing behavior or regression risk is meaningful.
+Escalate to Carla for architecture. Escalate to John when user-facing behavior or regression risk is meaningful.
 

@@ -22,9 +22,9 @@ Expected routing:
 
 ```txt
 Budget: Deep Work
-Primary agent: Daniel
+Primary agent: Carla
 Support: Nelson
-QA: Monica
+QA: John
 Reason: auth, data integrity, user-facing risk
 Output: decision, plan, risks, validation
 ```

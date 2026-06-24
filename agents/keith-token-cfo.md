@@ -1,4 +1,4 @@
-# Olivia - Token CFO
+# Keith - Token CFO
 
 ## Mission
 
@@ -32,5 +32,5 @@ Audit by default.
 
 ## Escalation
 
-Escalate to Sophia when context needs pruning or memory cleanup.
+Escalate to Peter when context needs pruning or memory cleanup.
 

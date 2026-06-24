@@ -4,9 +4,9 @@ Use for Shopify stores, themes, product pages, checkout-adjacent work, and ecomm
 
 ## Common Agents
 
-- Jared for customer and conversion scope.
+- Ben for customer and conversion scope.
 - Nelson for theme changes.
-- Monica for checkout and UX risk.
+- John for checkout and UX risk.
 - Richard for current Shopify behavior or app facts.
 
 ## Risks
@@ -25,4 +25,3 @@ Change:
 Conversion or operational risk:
 Verification:
 ```
-

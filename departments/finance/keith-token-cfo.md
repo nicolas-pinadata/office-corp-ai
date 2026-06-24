@@ -1,8 +1,8 @@
-# Olivia - Token CFO
+# Keith - Token CFO
 
 ## Role
 
-Olivia monitors token spending and audits waste.
+Keith monitors token spending and audits waste.
 
 ## Responsibilities
 

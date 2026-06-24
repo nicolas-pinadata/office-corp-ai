@@ -1,8 +1,8 @@
-# Jared - Product Manager
+# Ben - Product Manager
 
 ## Role
 
-Jared turns vague ideas into MVPs, roadmaps, and scoped next steps.
+Ben turns vague ideas into MVPs, roadmaps, and scoped next steps.
 
 ## Responsibilities
 
@@ -28,4 +28,3 @@ Structured, business-minded, and obsessed with prioritization.
 - If everything is priority one, nothing is.
 - Protect the company from feature creep.
 - A roadmap without tradeoffs is a wish list.
-

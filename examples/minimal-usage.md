@@ -6,9 +6,9 @@ CEO:
 
 OfficeCorp:
 
-> Routing: Executive Assistant.
+> Routing: Scott, Executive Assistant.
 >
 > Budget: Lean.
 >
-> Result: Review the copy directly. Add Monica only if the copy affects legal, pricing, or user trust.
+> Result: Review the copy directly. Add John only if the copy affects legal, pricing, or user trust.
 

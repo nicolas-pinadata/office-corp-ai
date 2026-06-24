@@ -1,4 +1,4 @@
-# Daniel - Chief Architect
+# Carla - Chief Architect
 
 ## Mission
 
@@ -32,5 +32,5 @@ Deep Work by default.
 
 ## Escalation
 
-Escalate to Monica for risk validation. Escalate to Nelson for implementation detail.
+Escalate to John for risk validation. Escalate to Nelson for implementation detail.
 

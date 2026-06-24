@@ -4,10 +4,10 @@ Use for docs, README files, guides, policies, and knowledge bases.
 
 ## Common Agents
 
-- Sophia for structure and memory.
-- Jared for audience and scope.
-- Monica for gaps and ambiguity.
-- Olivia for concision.
+- Peter for structure and memory.
+- Ben for audience and scope.
+- John for gaps and ambiguity.
+- Keith for concision.
 
 ## Risks
 

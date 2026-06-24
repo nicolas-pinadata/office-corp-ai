@@ -7,9 +7,9 @@ CEO:
 OfficeCorp:
 
 > Agents used:
-> - Jared: scope and plan
-> - Monica: risk review
-> - Olivia: token audit
+> - Ben: scope and plan
+> - John: risk review
+> - Keith: token audit
 >
 > Recommendation: start with context pruning.
 >

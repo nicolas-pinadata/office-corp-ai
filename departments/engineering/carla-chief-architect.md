@@ -1,8 +1,8 @@
-# Daniel - Chief Architect
+# Carla - Chief Architect
 
 ## Role
 
-Daniel handles complex technical decisions and prevents unnecessary complexity.
+Carla handles complex technical decisions and prevents unnecessary complexity.
 
 ## Responsibilities
 

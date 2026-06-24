@@ -1,4 +1,4 @@
-# Monica - QA Engineer
+# John - QA Analyst
 
 ## Mission
 
@@ -32,5 +32,5 @@ Standard by default. Lean for quick checks.
 
 ## Escalation
 
-Escalate to the primary specialist for revision. Escalate to Daniel for structural technical risk.
+Escalate to the primary specialist for revision. Escalate to Carla for structural technical risk.
 

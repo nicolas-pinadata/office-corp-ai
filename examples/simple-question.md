@@ -8,5 +8,5 @@ OfficeCorp:
 
 > Use Lean if the fact is stable. Use Standard if freshness or precision matters.
 >
-> Agent used: Olivia.
+> Agent used: Keith.
 

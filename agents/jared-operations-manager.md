@@ -1,4 +1,4 @@
-# Ethan - COO
+# Jared - COO / Operations Manager
 
 ## Mission
 

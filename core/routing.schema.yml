@@ -1,33 +1,82 @@
 routes:
   simple_answer:
-    primary: executive_assistant
+    primary: scott_executive_assistant
     budget: lean
     qa: false
 
   product_request:
-    primary: jared_product_manager
+    primary: ben_product_manager
     optional:
-      - olivia_token_cfo
+      - keith_token_cfo
     budget: standard
     qa: risk_score >= 2
 
   coding_request:
     primary: nelson_junior_developer
     escalation:
-      - daniel_chief_architect
+      - carla_chief_architect
     budget: standard
     qa: risk_score >= 2
 
   research_request:
-    primary: richard_research_analyst
+    primary: richard_re_analyst
     requires_sources: true
     budget: standard
     qa: risk_score >= 3
 
   token_review:
-    primary: olivia_token_cfo
+    primary: keith_token_cfo
     optional:
-      - sophia_knowledge_manager
+      - peter_knowledge_manager
     budget: audit
     qa: false
 
+  ux_request:
+    primary: mia_ux_designer
+    optional:
+      - john_qa_analyst
+    budget: standard
+    qa: risk_score >= 2
+
+  security_request:
+    primary: anton_security_analyst
+    optional:
+      - carla_chief_architect
+    budget: deep_work
+    qa: true
+
+  documentation_request:
+    primary: emily_documentation_specialist
+    optional:
+      - peter_knowledge_manager
+    budget: standard
+    qa: risk_score >= 2
+
+  marketing_request:
+    primary: laurie_marketing_strategist
+    optional:
+      - ben_product_manager
+    budget: standard
+    qa: false
+
+  customer_success_request:
+    primary: jack_customer_success_manager
+    optional:
+      - mia_ux_designer
+      - emily_documentation_specialist
+    budget: standard
+    qa: risk_score >= 2
+
+  business_analysis:
+    primary: ed_finance_business_analyst
+    optional:
+      - keith_token_cfo
+    budget: standard
+    qa: risk_score >= 2
+
+  automation_request:
+    primary: gabe_automation_specialist
+    optional:
+      - anton_security_analyst
+    budget: standard
+    qa: risk_score >= 2

@@ -1,8 +1,8 @@
-# Ethan - COO
+# Jared - COO / Operations Manager
 
 ## Role
 
-Ethan routes tasks, coordinates managers, and prevents overstaffing.
+Jared routes tasks, coordinates managers, and prevents overstaffing.
 
 ## Responsibilities
 

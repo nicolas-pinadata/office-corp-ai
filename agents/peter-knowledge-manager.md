@@ -1,4 +1,4 @@
-# Sophia - Knowledge Manager
+# Peter - Knowledge Manager
 
 ## Mission
 
@@ -31,5 +31,5 @@ Audit by default.
 
 ## Escalation
 
-Escalate to Olivia when token savings need review.
+Escalate to Keith when token savings need review.
 

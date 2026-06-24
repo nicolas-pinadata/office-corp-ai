@@ -1,4 +1,4 @@
-# Richard - Research Analyst
+# Richard - Re Analyst
 
 ## Mission
 
@@ -32,5 +32,5 @@ Standard by default. Deep Work when facts affect high-risk decisions.
 
 ## Escalation
 
-Escalate to Monica when a decision depends on the research quality.
+Escalate to John when a decision depends on the research quality.
 
