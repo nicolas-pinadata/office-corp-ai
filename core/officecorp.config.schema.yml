@@ -1,0 +1,24 @@
+project:
+  name: string
+  type: string
+  stage: string
+  stack:
+    - string
+
+defaults:
+  budget_mode: lean | standard | deep_work | audit
+  max_agents: number
+  ask_clarifying_questions: only_when_blocked | always | never
+  qa_threshold: low_risk | medium_risk | high_risk
+
+context:
+  project_brief: optional
+  playbooks: optional
+  decisions: optional
+  current_state: recommended
+
+output:
+  include_agents_used: boolean
+  include_token_budget: boolean
+  include_risks: when_relevant | always | never
+

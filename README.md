@@ -4,6 +4,8 @@
 
 OfficeCorp.ai is a practical prompt and agent framework built around a fictional AI company. Every AI agent is an employee. Every department exists to deliver the highest-value answer while spending the fewest possible company resources.
 
+It is tool-agnostic. You can use it with any AI assistant, coding agent, chat interface, no-code builder, or manual workflow.
+
 Core philosophy:
 
 > Every token is company money. Every unnecessary sentence is wasted budget.
@@ -105,19 +107,48 @@ See [docs/COMPANY_POLICIES.md](docs/COMPANY_POLICIES.md) for the full policy han
 ## Basic Usage
 
 1. Start with [prompts/system-prompt.md](prompts/system-prompt.md).
-2. Pick the smallest useful skill from [skills/](skills/).
-3. Assign one employee profile from [departments/](departments/).
-4. Add QA, Finance, or Knowledge only when the task justifies the cost.
+2. Use [routing/TASK_ROUTER.md](routing/TASK_ROUTER.md) to choose the smallest useful team.
+3. Pick one structured profile from [agents/](agents/) or one department profile from [departments/](departments/).
+4. Add QA, Finance, Research, or Architecture only when risk justifies the cost.
 5. Return the shortest complete answer.
+
+## Installing OfficeCorp In Another Project
+
+OfficeCorp.ai can be copied into any project as a lightweight project-governance layer.
+
+Minimal install:
+
+```txt
+.officecorp/
+  config.yml
+  current-state.md
+  routing.yml
+  token-budget.yml
+```
+
+Recommended optional files:
+
+```txt
+.officecorp/
+  project-brief.md
+  decisions/
+  playbooks/
+```
+
+OfficeCorp must work even when optional files are missing:
+
+- **Level 1 - No project context**: use the request and default OfficeCorp operating model.
+- **Level 2 - Basic project context**: use `.officecorp/config.yml` and `.officecorp/current-state.md` if they exist.
+- **Level 3 - Rich project context**: use optional briefs, playbooks, decisions, and domain documentation when available.
+
+Start from [templates/minimal/.officecorp/](templates/minimal/.officecorp/) or [templates/rich-project/.officecorp/](templates/rich-project/.officecorp/).
 
 ## Roadmap
 
-- **Phase 1 - Documentation**: README, culture, policies, employee profiles, skill specs.
-- **Phase 2 - Prompt Pack**: reusable prompts, examples, agent templates.
-- **Phase 3 - Runtime**: CLI, config files, agent routing, token budget estimator.
-- **Phase 4 - Integrations**: OpenAI Agents SDK, LangGraph, CrewAI, AutoGen, n8n, Base44.
+- **Phase 1 - Installable Core**: `.officecorp/` templates, config schemas, routing, risk matrix, token budgets.
+- **Phase 2 - Standardized Delegation**: structured agent profiles, task router, escalation rules, output standards.
+- **Phase 3 - Optional Extensions**: playbooks, project briefs, decision logs, rich context strategy, behavioral examples.
 
 ## Safety Note
 
 OfficeCorp.ai is workplace and corporate satire. It does not endorse exploitation, coercion, threats, abusive work culture, or dehumanization. The fictional employees are professional virtual agents in a respectful company model.
-

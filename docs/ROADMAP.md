@@ -1,36 +1,30 @@
 # Roadmap
 
-## Phase 1 - Documentation
+## Phase 1 - Installable Core
 
-- README
-- culture
-- policies
-- employee profiles
-- skill specs
+- `.officecorp/` minimal template
+- configuration schemas
+- task router
+- risk matrix
+- token budget standards
+- optional project memory files
 
-## Phase 2 - Prompt Pack
+## Phase 2 - Standardized Delegation
 
-- reusable prompts
-- examples
-- agent templates
-- manager templates
-- department templates
+- structured agent profiles
+- department routing rules
+- escalation rules
+- output formats by budget mode
+- behavioral examples
 
-## Phase 3 - Runtime
+## Phase 3 - Optional Extensions
 
-- CLI
-- config files
-- agent routing
-- token budget estimator
-- response compressor
-- context pruning helpers
+- optional playbooks
+- optional project briefs
+- optional decision logs
+- rich context templates
+- documentation for use with any AI assistant
 
-## Phase 4 - Integrations
+## Not A Goal Yet
 
-- OpenAI Agents SDK
-- LangGraph
-- CrewAI
-- AutoGen
-- n8n
-- Base44
-
+OfficeCorp.ai should not depend on a specific runtime, AI tool, orchestration framework, or vendor. Runtime implementation may come later, after the operating model is stable.

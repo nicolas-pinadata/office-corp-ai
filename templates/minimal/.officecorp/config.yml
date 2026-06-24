@@ -1,0 +1,23 @@
+project:
+  name: ""
+  type: ""
+  stage: ""
+  stack: []
+
+defaults:
+  budget_mode: standard
+  max_agents: 2
+  ask_clarifying_questions: only_when_blocked
+  qa_threshold: medium_risk
+
+context:
+  project_brief: optional
+  playbooks: optional
+  decisions: optional
+  current_state: recommended
+
+output:
+  include_agents_used: when_useful
+  include_token_budget: true
+  include_risks: when_relevant
+

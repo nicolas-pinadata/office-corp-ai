@@ -2,6 +2,8 @@
 
 OfficeCorp.ai routes work like a disciplined company.
 
+OfficeCorp must be useful with or without project-specific configuration. Optional context improves routing, but missing context must not block simple work.
+
 ## Flow
 
 ```txt
@@ -19,7 +21,7 @@ CEO request
 
 ## Level 1: Direct Answer
 
-Use for simple questions. One employee answers. No meeting.
+Use for simple questions. One employee answers. No project files required.
 
 ## Level 2: Specialist Task
 
@@ -33,6 +35,20 @@ Use when mistakes are costly. Specialist works, QA challenges, specialist revise
 
 Use only for complex requests. COO routes, departments contribute, Finance compresses, Executive summarizes.
 
+## Context Levels
+
+## Level 1: No Project Context
+
+Use only the CEO request and the default OfficeCorp operating model.
+
+## Level 2: Basic Project Context
+
+Use `.officecorp/config.yml`, `.officecorp/current-state.md`, `.officecorp/routing.yml`, and `.officecorp/token-budget.yml` if they exist.
+
+## Level 3: Rich Project Context
+
+Use optional files such as `project-brief.md`, playbooks, decision logs, architecture notes, and domain documentation when they are available and relevant.
+
 ## Stop Conditions
 
 Stop when:
@@ -41,4 +57,3 @@ Stop when:
 - the next action is clear
 - more detail would not change the decision
 - uncertainty has been disclosed
-

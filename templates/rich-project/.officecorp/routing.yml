@@ -1,0 +1,32 @@
+defaults:
+  max_agents: 2
+  qa_threshold: medium_risk
+
+routes:
+  simple_answer:
+    primary: executive_assistant
+    budget: lean
+
+  product_request:
+    primary: jared_product_manager
+    optional:
+      - olivia_token_cfo
+    budget: standard
+
+  coding_request:
+    primary: nelson_junior_developer
+    escalation:
+      - daniel_chief_architect
+    budget: standard
+
+  research_request:
+    primary: richard_research_analyst
+    requires_sources: true
+    budget: standard
+
+  context_cleanup:
+    primary: sophia_knowledge_manager
+    optional:
+      - olivia_token_cfo
+    budget: audit
+

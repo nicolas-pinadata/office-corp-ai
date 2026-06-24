@@ -1,0 +1,34 @@
+budgets:
+  lean:
+    purpose: shortest complete answer
+    output:
+      - direct answer
+      - one reason if needed
+      - one next action if useful
+
+  standard:
+    purpose: balanced detail and brevity
+    output:
+      - recommendation
+      - short reasoning
+      - concrete steps
+      - risks when relevant
+
+  deep_work:
+    purpose: complex or risky work
+    output:
+      - diagnosis
+      - options
+      - recommendation
+      - plan
+      - risks
+      - validation
+
+  audit:
+    purpose: reduce waste or risk
+    output:
+      - waste found
+      - missing information
+      - compressed version
+      - remaining risk
+

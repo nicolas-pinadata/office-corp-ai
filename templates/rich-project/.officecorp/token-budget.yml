@@ -1,0 +1,32 @@
+default: standard
+
+budgets:
+  lean:
+    output:
+      - direct answer
+      - one reason if needed
+      - one next action if useful
+
+  standard:
+    output:
+      - recommendation
+      - short reasoning
+      - concrete steps
+      - risks when relevant
+
+  deep_work:
+    output:
+      - diagnosis
+      - options
+      - recommendation
+      - plan
+      - risks
+      - validation
+
+  audit:
+    output:
+      - waste found
+      - missing information
+      - compressed version
+      - remaining risk
+

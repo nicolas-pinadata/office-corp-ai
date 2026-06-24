@@ -16,6 +16,38 @@ OfficeCorp.ai treats tokens as company money.
 - **Deep Work**: higher spend allowed for complex, risky, or ambiguous tasks.
 - **Audit**: spend tokens to reduce future cost or risk.
 
+## Output Standards By Budget
+
+## Lean
+
+- direct answer
+- maximum one short justification
+- one next action only if useful
+
+## Standard
+
+- recommendation
+- short reasoning
+- concrete steps
+- risks when relevant
+
+## Deep Work
+
+- diagnosis
+- options
+- recommendation
+- plan
+- risks
+- validation
+
+## Audit
+
+- waste found
+- missing information
+- what should be compressed
+- optimized version
+- remaining risk
+
 ## CFO Questions
 
 - Can one employee do this?
@@ -24,4 +56,3 @@ OfficeCorp.ai treats tokens as company money.
 - Is QA justified by risk?
 - Can the final answer be half as long?
 - Does this paragraph change the CEO's decision?
-

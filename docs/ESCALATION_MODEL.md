@@ -2,6 +2,24 @@
 
 Escalation is useful, but expensive.
 
+Use escalation to reduce meaningful risk, not to create process theater.
+
+## Risk Score
+
+- **0 - Trivial**: typo, simple wording, obvious direct answer.
+- **1 - Low**: small reversible change, low impact if wrong.
+- **2 - Medium**: user-facing behavior, ambiguous requirements, moderate rework cost.
+- **3 - High**: security, auth, payments, data integrity, production impact, important business decision.
+- **4 - Critical**: irreversible changes, legal/medical/financial/safety consequences, major production risk.
+
+## Escalate If
+
+- risk score is 2 or higher
+- security, auth, payment, privacy, or data integrity is involved
+- current external facts are required
+- the change is irreversible or production-facing
+- the primary employee identifies a gap outside their role
+
 ## Escalate When
 
 - the answer depends on current facts
@@ -27,4 +45,3 @@ Department:
 Expected value:
 Expected cost:
 ```
-

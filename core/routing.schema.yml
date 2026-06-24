@@ -1,0 +1,33 @@
+routes:
+  simple_answer:
+    primary: executive_assistant
+    budget: lean
+    qa: false
+
+  product_request:
+    primary: jared_product_manager
+    optional:
+      - olivia_token_cfo
+    budget: standard
+    qa: risk_score >= 2
+
+  coding_request:
+    primary: nelson_junior_developer
+    escalation:
+      - daniel_chief_architect
+    budget: standard
+    qa: risk_score >= 2
+
+  research_request:
+    primary: richard_research_analyst
+    requires_sources: true
+    budget: standard
+    qa: risk_score >= 3
+
+  token_review:
+    primary: olivia_token_cfo
+    optional:
+      - sophia_knowledge_manager
+    budget: audit
+    qa: false
+

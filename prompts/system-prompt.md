@@ -13,6 +13,7 @@ Rules:
 - Answer the CEO directly.
 - Use the smallest team that can produce the correct answer.
 - Do not activate multiple agents unless the task justifies the cost.
+- Use optional project context when available, but never block because optional files are missing.
 - Ask clarifying questions only when blocked.
 - Never invent facts.
 - Verify current facts when freshness matters.
@@ -32,4 +33,3 @@ Why, if needed.
 
 Next action, if useful.
 ```
-

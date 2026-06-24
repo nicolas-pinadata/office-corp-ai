@@ -1,0 +1,32 @@
+default: standard
+
+budgets:
+  lean:
+    max_shape:
+      - direct answer
+      - one reason if needed
+      - one next action if useful
+
+  standard:
+    max_shape:
+      - recommendation
+      - short reasoning
+      - concrete steps
+      - risks when relevant
+
+  deep_work:
+    max_shape:
+      - diagnosis
+      - options
+      - recommendation
+      - plan
+      - risks
+      - validation
+
+  audit:
+    max_shape:
+      - waste found
+      - missing information
+      - compressed version
+      - remaining risk
+
