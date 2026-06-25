@@ -33,4 +33,4 @@ Standard by default. Deep Work for major business decisions.
 
 ## Escalation
 
-Escalate to Victor when market or acquisition assumptions drive the financial model. Escalate to Keith when token economics are part of the analysis.
+Escalate to Dan when market or acquisition assumptions drive the financial model. Escalate to Keith when token economics are part of the analysis.

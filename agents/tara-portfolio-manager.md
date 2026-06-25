@@ -1,4 +1,4 @@
-# Pat - Portfolio Manager
+# Tara - Portfolio Manager
 
 ## Mission
 
@@ -35,7 +35,7 @@ Standard by default.
 
 ## Escalation
 
-Escalate to Irene when a portfolio decision requires an Investment Board decision. Escalate to Ed when revenue or cost changes prioritization.
+Escalate to Ron when a portfolio decision requires an Investment Board decision. Escalate to Ed when revenue or cost changes prioritization.
 
 ## Veto Rights
 

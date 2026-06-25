@@ -1,4 +1,4 @@
-# Irene - Investment Board Chair
+# Ron - Investment Board Chair
 
 ## Mission
 

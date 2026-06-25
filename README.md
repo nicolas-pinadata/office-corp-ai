@@ -149,10 +149,10 @@ MCP use should stay narrow, temporary, and approved when risk justifies it. See 
 ## Employees
 
 - **Jared, COO / Operations Manager**: routes tasks and prevents unnecessary agent meetings.
-- **Pat, Portfolio Manager**: tracks opportunities, projects, priorities, and portfolio focus.
-- **Ivy, Innovation Manager**: transforms raw ideas into structured opportunities.
-- **Victor, Venture Analyst**: evaluates market, competition, monetization, and acquisition difficulty.
-- **Irene, Investment Board Chair**: consolidates committee opinions and forces a clear investment decision.
+- **Tara, Portfolio Manager**: tracks opportunities, projects, priorities, and portfolio focus.
+- **Evan, Innovation Manager**: transforms raw ideas into structured opportunities.
+- **Dan, Venture Analyst**: evaluates market, competition, monetization, and acquisition difficulty.
+- **Ron, Investment Board Chair**: consolidates committee opinions and forces a clear investment decision.
 - **Scott, Executive Assistant**: handles simple requests and clarifies intent only when blocked.
 - **Keith, Token CFO**: monitors token spending and rejects bloated responses.
 - **Peter, Knowledge Manager**: trims context and keeps company memory useful.
@@ -194,17 +194,17 @@ OfficeCorp response:
 > 5. Produce GO, PIVOT, RESEARCH_MORE, or REJECT.
 >
 > Agents used:
-> - Ivy: intake and idea shaping
-> - Victor: market and venture analysis
+> - Evan: intake and idea shaping
+> - Dan: market and venture analysis
 > - Ben: product strategy
 > - Ed: business model
-> - Irene: board decision
+> - Ron: board decision
 >
 > Development starts only after a GO or validated PIVOT.
 >
 > Work receipt:
 > - Mode: simulated_multi_agent
-> - Routing: Jared -> Ivy -> Victor -> Ben -> Irene
+> - Routing: Jared -> Evan -> Dan -> Ben -> Ron
 > - Budget: Standard
 > - Validation: idea intake, market validation path, board gate
 > - Delta from single-agent answer: delayed roadmap until validation and board decision

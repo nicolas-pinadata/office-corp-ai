@@ -21,4 +21,4 @@ OfficeCorp:
 >
 > Current verdict: `RESEARCH_MORE`.
 >
-> Agents used: Ivy for idea shaping, Victor for venture analysis path, Ben for product framing, Irene for board gate.
+> Agents used: Evan for idea shaping, Dan for venture analysis path, Ben for product framing, Ron for board gate.

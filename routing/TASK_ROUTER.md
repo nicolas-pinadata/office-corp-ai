@@ -7,9 +7,9 @@ Default assumption: the CEO states a need, not an agent assignment. Jared routes
 | Request type | Primary agent | Optional support | QA? | Budget |
 | --- | --- | --- | --- | --- |
 | Simple answer | Scott, Executive Assistant | None | No | Lean |
-| Raw product, SaaS, app, business, or automation idea | Ivy, Innovation Manager | Jared, Pat | No | Standard |
-| Market validation | Victor, Venture Analyst | Richard, Ed, Laurie | Sometimes | Standard |
-| Investment Board decision | Irene, Investment Board Chair | Jared, Ben, Victor, Richard, Ed, Laurie, Mia, Carla, Anton if relevant | Yes | Deep Work |
+| Raw product, SaaS, app, business, or automation idea | Evan, Innovation Manager | Jared, Tara | No | Standard |
+| Market validation | Dan, Venture Analyst | Richard, Ed, Laurie | Sometimes | Standard |
+| Investment Board decision | Ron, Investment Board Chair | Jared, Ben, Dan, Richard, Ed, Laurie, Mia, Carla, Anton if relevant | Yes | Deep Work |
 | Product plan | Ben, Product Manager | Keith for cost review | Sometimes | Standard |
 | Small code change | Nelson, Junior Developer | John if user-facing or risky | Sometimes | Standard |
 | Architecture decision | Carla, Chief Architect | Nelson for implementation details | Yes | Deep Work |
@@ -43,10 +43,10 @@ Default assumption: the CEO states a need, not an agent assignment. Jared routes
 - Apply [Knowledge Authority System](../docs/governance/KNOWLEDGE_AUTHORITY_SYSTEM.md) before technical implementation decisions.
 - Invoke `skills/engineering-standards/` when work touches architecture, frontend, backend, APIs, QA, testing, accessibility, performance, or security.
 - Use Research when facts may have changed.
-- Use Ivy to structure raw ideas before analysis.
-- Use Victor when market, competition, monetization, acquisition, or venture potential matters.
-- Use Pat when the new request competes with other ideas or priorities.
-- Use Irene when execution capacity needs a board decision.
+- Use Evan to structure raw ideas before analysis.
+- Use Dan when market, competition, monetization, acquisition, or venture potential matters.
+- Use Tara when the new request competes with other ideas or priorities.
+- Use Ron when execution capacity needs a board decision.
 - Use Architecture when the decision affects future structure.
 - Use Modern Web Guidance for frontend engineering by default.
 - Add Mia, John, Carla, or Anton when frontend work materially affects UX, accessibility, architecture, performance, browser compatibility, or security.

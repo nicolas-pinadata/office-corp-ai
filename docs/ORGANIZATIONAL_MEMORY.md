@@ -128,7 +128,7 @@ Domain owners own the correctness of knowledge in their area:
 - Ben owns product knowledge.
 - Carla owns architecture knowledge.
 - Mia owns UX knowledge.
-- Victor owns market and venture evidence.
+- Dan owns market and venture evidence.
 - Laurie owns marketing knowledge.
 - Ed owns financial and business analysis.
 - John owns QA and validation records.

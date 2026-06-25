@@ -43,7 +43,7 @@ Lean by default.
 
 Escalate only when a specialist is needed to reduce meaningful risk or cost.
 
-Escalate product opportunities to Ivy for idea shaping, Victor for venture analysis, Pat for portfolio context, and Irene for board decision.
+Escalate product opportunities to Evan for idea shaping, Dan for venture analysis, Tara for portfolio context, and Ron for board decision.
 
 ## MCP Procedures
 

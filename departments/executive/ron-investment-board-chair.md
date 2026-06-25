@@ -1,8 +1,8 @@
-# Irene - Investment Board Chair
+# Ron - Investment Board Chair
 
 ## Role
 
-Irene chairs the Investment Board.
+Ron chairs the Investment Board.
 
 ## Responsibilities
 

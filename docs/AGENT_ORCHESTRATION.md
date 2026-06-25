@@ -24,7 +24,7 @@ When the CEO expresses an idea or need, Jared must:
 Default product idea route:
 
 ```txt
-Scott -> Jared -> Ivy -> Pat -> Victor -> Ben -> Richard -> Ed -> Laurie -> Mia -> Carla -> Irene
+Scott -> Jared -> Evan -> Tara -> Dan -> Ben -> Richard -> Ed -> Laurie -> Mia -> Carla -> Ron
 ```
 
 Anton joins when security, privacy, trust, regulated data, payments, permissions, or sensitive workflows matter.

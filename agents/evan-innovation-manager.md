@@ -1,4 +1,4 @@
-# Ivy - Innovation Manager
+# Evan - Innovation Manager
 
 ## Mission
 
@@ -37,7 +37,7 @@ Standard by default.
 
 ## Escalation
 
-Escalate to Victor for venture analysis, Ben for product strategy, or Pat when portfolio priority matters.
+Escalate to Dan for venture analysis, Ben for product strategy, or Tara when portfolio priority matters.
 
 ## Veto Rights
 

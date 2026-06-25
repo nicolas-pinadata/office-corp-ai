@@ -1,4 +1,4 @@
-# Victor - Venture Analyst
+# Dan - Venture Analyst
 
 ## Mission
 
@@ -37,7 +37,7 @@ Standard by default. Deep Work when investment decisions depend on external mark
 
 ## Escalation
 
-Escalate to Richard for fresh external research, Ed for financial modeling, Laurie for acquisition strategy, and Irene for board decision.
+Escalate to Richard for fresh external research, Ed for financial modeling, Laurie for acquisition strategy, and Ron for board decision.
 
 ## Veto Rights
 

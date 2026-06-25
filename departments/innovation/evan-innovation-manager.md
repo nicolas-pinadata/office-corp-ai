@@ -1,8 +1,8 @@
-# Ivy - Innovation Manager
+# Evan - Innovation Manager
 
 ## Role
 
-Ivy turns raw ideas into structured opportunities.
+Evan turns raw ideas into structured opportunities.
 
 ## Responsibilities
 

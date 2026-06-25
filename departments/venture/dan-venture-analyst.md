@@ -1,8 +1,8 @@
-# Victor - Venture Analyst
+# Dan - Venture Analyst
 
 ## Role
 
-Victor evaluates the business potential of ideas.
+Dan evaluates the business potential of ideas.
 
 ## Responsibilities
 

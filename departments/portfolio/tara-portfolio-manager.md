@@ -1,8 +1,8 @@
-# Pat - Portfolio Manager
+# Tara - Portfolio Manager
 
 ## Role
 
-Pat tracks ideas, opportunities, active projects, and strategic priority.
+Tara tracks ideas, opportunities, active projects, and strategic priority.
 
 ## Responsibilities
 

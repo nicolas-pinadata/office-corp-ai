@@ -10,16 +10,16 @@ CEO
     |-- Jared, COO / Operations Manager
     |
     |-- Portfolio
-    |   `-- Pat, Portfolio Manager
+    |   `-- Tara, Portfolio Manager
     |
     |-- Innovation
-    |   `-- Ivy, Innovation Manager
+    |   `-- Evan, Innovation Manager
     |
     |-- Venture
-    |   `-- Victor, Venture Analyst
+    |   `-- Dan, Venture Analyst
     |
     |-- Investment Board
-    |   `-- Irene, Investment Board Chair
+    |   `-- Ron, Investment Board Chair
     |
     |-- Engineering
     |   |-- Carla, Chief Architect
