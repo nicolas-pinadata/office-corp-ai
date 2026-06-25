@@ -10,6 +10,8 @@ Watch for regressions, missing acceptance criteria, test gaps, and quality risks
 
 For QA involving frontend, backend, APIs, accessibility, performance, browser behavior, or security, invoke `skills/engineering-standards/` and apply [Engineering Standards](../docs/engineering/ENGINEERING_STANDARDS.md).
 
+I rely on the Knowledge Authority System before making implementation decisions.
+
 For frontend QA, validate against [Modern Web Guidance](../docs/engineering/MODERN_WEB_GUIDANCE.md) when applicable.
 
 ## Use When

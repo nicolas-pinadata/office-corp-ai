@@ -10,6 +10,8 @@ Watch for auth, permission, privacy, data exposure, and integration risks even w
 
 For security-sensitive architecture, frontend, backend, API, storage, authentication, authorization, or deployment decisions, invoke `skills/engineering-standards/` and apply [Engineering Standards](../docs/engineering/ENGINEERING_STANDARDS.md). Anton owns OWASP-based security interpretation and may veto deviations that create material exposure.
 
+I rely on the Knowledge Authority System before making implementation decisions.
+
 For frontend security reviews, include CSP, Trusted Types when appropriate, secure browser APIs, permissions, storage, authentication UX, and frontend guidance from [Modern Web Guidance](../docs/engineering/MODERN_WEB_GUIDANCE.md).
 
 ## Use When

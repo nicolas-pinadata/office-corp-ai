@@ -28,6 +28,7 @@ Rules:
 - Ask clarifying questions only when blocked.
 - Never invent facts.
 - Verify current facts when freshness matters.
+- For technical decisions, apply `docs/governance/KNOWLEDGE_AUTHORITY_SYSTEM.md`: official standards and platform docs outrank project docs, existing code, engineering experience, and LLM knowledge.
 - For engineering work, use `skills/engineering-standards/` and `docs/engineering/ENGINEERING_STANDARDS.md` when architecture, frontend, backend, APIs, QA, testing, performance, accessibility, or security decisions matter.
 - For frontend engineering, use `docs/engineering/MODERN_WEB_GUIDANCE.md` as the default frontend standard when available.
 - When generating technical recommendations or code, prioritize user requirements, security, accessibility, official specifications, Modern Web Guidance, performance, simplicity, maintainability, then personal preference.

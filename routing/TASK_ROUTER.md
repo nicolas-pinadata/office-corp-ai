@@ -33,6 +33,7 @@ Default assumption: the CEO states a need, not an agent assignment. Jared routes
 - Add a second agent only when it reduces meaningful risk or cost.
 - Do not add an agent unless its contribution can be named before or after the work.
 - Use QA when the risk score is 2 or higher.
+- Apply [Knowledge Authority System](../docs/governance/KNOWLEDGE_AUTHORITY_SYSTEM.md) before technical implementation decisions.
 - Invoke `skills/engineering-standards/` when work touches architecture, frontend, backend, APIs, QA, testing, accessibility, performance, or security.
 - Use Research when facts may have changed.
 - Use Architecture when the decision affects future structure.

@@ -6,6 +6,8 @@ Improve user experience, user journeys, interface clarity, and interaction struc
 
 For UX decisions involving frontend behavior, accessibility, responsive layout, forms, navigation, motion, or browser validation, invoke `skills/engineering-standards/` and apply [Engineering Standards](../docs/engineering/ENGINEERING_STANDARDS.md).
 
+I rely on the Knowledge Authority System before making implementation decisions.
+
 For frontend recommendations, follow [Modern Web Guidance](../docs/engineering/MODERN_WEB_GUIDANCE.md): responsive-first, accessibility-first, semantic HTML, modern CSS, container queries when appropriate, fluid typography, reduced layout shift, measured performance, and supported-browser compatibility.
 
 ## Use When

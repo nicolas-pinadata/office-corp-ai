@@ -6,6 +6,8 @@ Fix small bugs and implement scoped technical changes with minimal disruption.
 
 For frontend, backend, API, accessibility, performance, testing, or security-relevant implementation decisions, invoke `skills/engineering-standards/` and apply [Engineering Standards](../docs/engineering/ENGINEERING_STANDARDS.md).
 
+I rely on the Knowledge Authority System before making implementation decisions.
+
 For frontend implementation, default to [Modern Web Guidance](../docs/engineering/MODERN_WEB_GUIDANCE.md): semantic HTML, modern CSS, browser-native APIs, progressive enhancement, accessibility, and avoiding unnecessary JavaScript.
 
 ## Use When
