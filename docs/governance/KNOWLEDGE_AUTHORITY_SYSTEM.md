@@ -2,7 +2,7 @@
 
 OfficeCorp technical decisions must be based on the highest-authority source available. The Knowledge Authority System defines how agents rank information before making implementation decisions, reviewing work, or documenting assumptions.
 
-It operates under the [OfficeCorp Company Operating System](COMPANY_OS.md).
+It operates under the [OfficeCorp Constitution](OFFICECORP_CONSTITUTION.md) and the [OfficeCorp Company Operating System](COMPANY_OS.md).
 
 The goal is to reduce hallucinations, improve consistency, and keep OfficeCorp aligned with evolving technologies without adding unnecessary process.
 

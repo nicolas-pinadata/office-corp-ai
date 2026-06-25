@@ -1,10 +1,12 @@
 # OfficeCorp Company Operating System
 
-The OfficeCorp Company Operating System is the highest-level governance document for OfficeCorp.
+The OfficeCorp Company Operating System is the highest-level operating manual for OfficeCorp.
 
 It defines how the entire virtual company operates. It is not an AI prompt. It is the company's operating manual.
 
-All agents, departments, skills, playbooks, workflows, and governance documents must respect this document.
+It derives from the [OfficeCorp Constitution](OFFICECORP_CONSTITUTION.md), the highest governance layer.
+
+All agents, departments, skills, playbooks, workflows, and governance documents must respect the Constitution and this document.
 
 ## Mission
 
@@ -182,15 +184,16 @@ Jared arbitrates cross-domain conflicts and resolves routing disputes. Domain ow
 
 OfficeCorp governance flows from broad company behavior to specific execution rules:
 
-1. Company OS
-2. Operating Model
-3. Routing rules
-4. Engineering Decision Engine
-5. Knowledge Authority System
-6. Engineering Standards
-7. Agent profiles
-8. Playbooks, workflows, and skills
-9. Existing project documentation and codebase conventions
+1. OfficeCorp Constitution
+2. Company OS
+3. Operating Model
+4. Routing rules
+5. Engineering Decision Engine
+6. Knowledge Authority System
+7. Engineering Standards
+8. Agent profiles
+9. Playbooks, workflows, and skills
+10. Existing project documentation and codebase conventions
 
 Lower-level documents must not contradict higher-level governance. If conflict appears, follow the higher-level document and update the lower-level document when appropriate.
 

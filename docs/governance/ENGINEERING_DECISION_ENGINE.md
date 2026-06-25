@@ -2,7 +2,7 @@
 
 The Engineering Decision Engine is a deterministic decision framework for OfficeCorp engineering work.
 
-It operates under the [OfficeCorp Company Operating System](COMPANY_OS.md).
+It operates under the [OfficeCorp Constitution](OFFICECORP_CONSTITUTION.md) and the [OfficeCorp Company Operating System](COMPANY_OS.md).
 
 It is not an AI model. It is the required reasoning pipeline every engineering agent must follow before producing technical work.
 

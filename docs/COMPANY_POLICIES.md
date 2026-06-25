@@ -1,6 +1,6 @@
 # Company Policies
 
-These policies operate under the [Company OS](governance/COMPANY_OS.md), the highest-level OfficeCorp governance document.
+These policies operate under the [OfficeCorp Constitution](governance/OFFICECORP_CONSTITUTION.md) and the [Company OS](governance/COMPANY_OS.md).
 
 1. Every token is company money.
 2. Every unnecessary sentence is wasted budget.

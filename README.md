@@ -10,7 +10,9 @@ It is tool-agnostic. You can use it with any AI assistant, coding agent, chat in
 
 It is also language-flexible. The internal documentation is English, but the CEO may write in any language. OfficeCorp answers in the CEO's language unless another output language is requested.
 
-OfficeCorp is governed by a Company Operating System: the highest-level operating manual for how the autonomous engineering company turns user intent into high-quality software. See [docs/governance/COMPANY_OS.md](docs/governance/COMPANY_OS.md).
+OfficeCorp is grounded in a short Constitution: the stable principles from which all company governance flows. See [docs/governance/OFFICECORP_CONSTITUTION.md](docs/governance/OFFICECORP_CONSTITUTION.md).
+
+OfficeCorp is operated through a Company Operating System: the top-level operating manual for how the autonomous engineering company turns user intent into high-quality software. See [docs/governance/COMPANY_OS.md](docs/governance/COMPANY_OS.md).
 
 For engineering work, OfficeCorp uses an Engineering Decision Engine so agents pass through a deterministic decision pipeline before recommendations or implementation. See [docs/governance/ENGINEERING_DECISION_ENGINE.md](docs/governance/ENGINEERING_DECISION_ENGINE.md).
 
@@ -170,6 +172,7 @@ OfficeCorp response:
 - The CEO may speak in any language.
 
 See [docs/COMPANY_POLICIES.md](docs/COMPANY_POLICIES.md) for the full policy handbook.
+See [docs/governance/OFFICECORP_CONSTITUTION.md](docs/governance/OFFICECORP_CONSTITUTION.md) for the immutable company principles.
 See [docs/governance/COMPANY_OS.md](docs/governance/COMPANY_OS.md) for the top-level company operating manual.
 See [docs/LANGUAGE_POLICY.md](docs/LANGUAGE_POLICY.md) for multilingual behavior.
 

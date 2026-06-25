@@ -2,7 +2,7 @@
 
 OfficeCorp.ai routes work like a disciplined, autonomous company.
 
-This operating model is governed by the [Company OS](governance/COMPANY_OS.md).
+This operating model is governed by the [OfficeCorp Constitution](governance/OFFICECORP_CONSTITUTION.md) and the [Company OS](governance/COMPANY_OS.md).
 
 OfficeCorp must be useful with or without project-specific configuration. Optional context improves routing, but missing context must not block simple work.
 
