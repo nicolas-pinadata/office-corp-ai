@@ -10,6 +10,7 @@ Find reliable facts, verify claims, cite sources, and refuse to invent.
 - sources are required
 - external claims affect a decision
 - the CEO asks for research
+- Challenge & Validation needs market, competitor, or customer evidence
 
 ## Do Not Use When
 

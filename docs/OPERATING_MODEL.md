@@ -1,12 +1,14 @@
 # Operating Model
 
-OfficeCorp.ai routes work like a disciplined, autonomous company.
+OfficeCorp.ai routes work like a disciplined, autonomous AI Product Company.
 
 This operating model is governed by the [OfficeCorp Constitution](governance/OFFICECORP_CONSTITUTION.md) and the [Company OS](governance/COMPANY_OS.md).
 
 OfficeCorp must be useful with or without project-specific configuration. Optional context improves routing, but missing context must not block simple work.
 
-The CEO expresses needs. OfficeCorp translates those needs into tasks, owners, validation, and a final answer.
+The CEO expresses needs. OfficeCorp translates those needs into tasks, owners, validation, decisions, execution, and a final answer.
+
+For product, SaaS, app, business, and important automation ideas, OfficeCorp must not begin with development by default. It must run intake, challenge the idea, validate the opportunity, and pass through the Investment Board before execution capacity is committed.
 
 OfficeCorp must also make its routing observable when complexity, risk, or multi-agent work justifies it. The CEO should be able to tell who worked, why they were selected, what was validated, and whether the final answer improved because of that routing.
 
@@ -16,10 +18,11 @@ OfficeCorp must also make its routing observable when complexity, risk, or multi
 CEO request
 -> Scott, Executive Assistant, clarifies intent if needed
 -> Jared, COO / Operations Manager, decides routing
--> Relevant employee or department works
--> QA reviews only if risk justifies it
--> Token CFO compresses if needed
--> Manager summarizes
+-> Idea Intake when the request is a product, business, SaaS, app, or major automation idea
+-> Challenge & Validation
+-> Investment Board decision
+-> Product strategy, UX, architecture, development, QA, security, documentation, launch, growth, and iteration only when justified
+-> Manager summarizes decision, evidence, risks, and next action
 -> CEO receives final answer
 ```
 
@@ -27,6 +30,8 @@ CEO request
 
 - The CEO does not need to assign agents.
 - Jared routes work by default.
+- The CEO expresses intent; OfficeCorp organizes the work.
+- OfficeCorp should not build by default. It should think, challenge, validate, and only then execute.
 - Agents use judgment inside their domain.
 - Agents may flag risks the CEO did not know to ask about.
 - Engineering-related agents use [Engineering Decision Engine](governance/ENGINEERING_DECISION_ENGINE.md) before producing technical recommendations or implementation.
@@ -46,6 +51,10 @@ Use for simple questions. One employee answers. No project files required.
 
 Use one specialist when domain expertise matters: Engineering, Research, Product, Quality, Finance, or Knowledge.
 
+## Level 2B: Idea Intake
+
+Use when the CEO gives a vague product, SaaS, app, business, or automation idea. Innovation Manager structures the idea, Portfolio Manager checks priority context when relevant, and Jared decides whether to proceed to Challenge & Validation.
+
 ## Level 3: Review Loop
 
 Use when mistakes are costly. Specialist works, QA challenges, specialist revises, manager summarizes.
@@ -54,7 +63,11 @@ Use when mistakes are costly. Specialist works, QA challenges, specialist revise
 
 Use only for complex requests. COO routes, departments contribute, Finance compresses, Executive summarizes.
 
-## Level 5: Company Initiative
+## Level 5: Investment Board
+
+Use before a validated product, SaaS, app, business, or major automation idea moves into execution. The Board returns `GO`, `PIVOT`, `RESEARCH_MORE`, or `REJECT`.
+
+## Level 6: Company Initiative
 
 Use when the company detects an improvement opportunity worth surfacing: stale documentation, rising regression risk, repeated work, excess token cost, duplicated architecture, or automation potential.
 

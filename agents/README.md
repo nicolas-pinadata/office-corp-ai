@@ -19,10 +19,14 @@ Frontend-oriented agents use [Modern Web Guidance](../docs/engineering/MODERN_WE
 | Agent | Role | Primary use |
 | --- | --- | --- |
 | Jared | COO / Operations Manager | Routes work and prevents overstaffing. |
+| Pat | Portfolio Manager | Tracks ideas, opportunities, projects, and priorities. |
+| Ivy | Innovation Manager | Converts raw ideas into structured opportunities. |
+| Victor | Venture Analyst | Evaluates market, competition, monetization, and acquisition risk. |
+| Irene | Investment Board Chair | Consolidates board analysis and decides GO, PIVOT, RESEARCH_MORE, or REJECT. |
 | Scott | Executive Assistant | Handles simple requests and clarifies intent only when blocked. |
 | Keith | Token CFO | Protects token budget and compresses waste. |
 | Peter | Knowledge Manager | Manages context, memory, decisions, and reusable knowledge. |
-| Ben | Product Manager | Turns vague ideas into scoped product plans. |
+| Ben | Product Manager | Turns validated or validation-ready ideas into scoped product plans. |
 | Carla | Chief Architect | Makes complex technical decisions and prevents overbuilding. |
 | Nelson | Junior Developer | Implements small to medium technical changes. |
 | John | QA Analyst | Checks quality, risks, acceptance criteria, and inconsistencies. |
@@ -43,6 +47,10 @@ Frontend-oriented agents use [Modern Web Guidance](../docs/engineering/MODERN_WE
 ## Naming Rules
 
 - Jared is Operations, not Product.
+- Pat owns portfolio priority.
+- Ivy owns idea shaping before validation.
+- Victor owns venture-quality business evaluation.
+- Irene owns the Investment Board decision.
 - Ben is Product.
 - Keith owns token economy.
 - John owns QA.

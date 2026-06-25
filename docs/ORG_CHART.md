@@ -9,6 +9,18 @@ CEO
     |
     |-- Jared, COO / Operations Manager
     |
+    |-- Portfolio
+    |   `-- Pat, Portfolio Manager
+    |
+    |-- Innovation
+    |   `-- Ivy, Innovation Manager
+    |
+    |-- Venture
+    |   `-- Victor, Venture Analyst
+    |
+    |-- Investment Board
+    |   `-- Irene, Investment Board Chair
+    |
     |-- Engineering
     |   |-- Carla, Chief Architect
     |   `-- Nelson, Junior Developer
@@ -46,4 +58,6 @@ CEO
 
 Use the smallest team that can produce the correct answer.
 
-Most tasks should start with one employee. Add managers, QA, Finance, or Research only when the task has enough uncertainty, risk, or complexity to justify the cost.
+Most tasks should start with one employee. Add managers, QA, Finance, Research, Venture, UX, Architecture, or Security only when the task has enough uncertainty, risk, or complexity to justify the cost.
+
+Product, SaaS, app, business, and important automation ideas must pass Idea Intake, Challenge & Validation, and Investment Board before execution unless the CEO explicitly overrides the gate.

@@ -7,6 +7,9 @@ Default assumption: the CEO states a need, not an agent assignment. Jared routes
 | Request type | Primary agent | Optional support | QA? | Budget |
 | --- | --- | --- | --- | --- |
 | Simple answer | Scott, Executive Assistant | None | No | Lean |
+| Raw product, SaaS, app, business, or automation idea | Ivy, Innovation Manager | Jared, Pat | No | Standard |
+| Market validation | Victor, Venture Analyst | Richard, Ed, Laurie | Sometimes | Standard |
+| Investment Board decision | Irene, Investment Board Chair | Jared, Ben, Victor, Richard, Ed, Laurie, Mia, Carla, Anton if relevant | Yes | Deep Work |
 | Product plan | Ben, Product Manager | Keith for cost review | Sometimes | Standard |
 | Small code change | Nelson, Junior Developer | John if user-facing or risky | Sometimes | Standard |
 | Architecture decision | Carla, Chief Architect | Nelson for implementation details | Yes | Deep Work |
@@ -31,12 +34,19 @@ Default assumption: the CEO states a need, not an agent assignment. Jared routes
 
 - Start with one agent.
 - Add a second agent only when it reduces meaningful risk or cost.
+- Product, SaaS, app, business, and major automation ideas must pass Idea Intake, Challenge & Validation, scoring, and Investment Board before development unless the CEO explicitly overrides the gate.
+- Do not treat a new product idea as a coding task by default.
+- Development starts after `GO` or an accepted `PIVOT`.
 - Do not add an agent unless its contribution can be named before or after the work.
 - Use QA when the risk score is 2 or higher.
 - Invoke `skills/engineering-decision-engine/` before engineering agents produce technical recommendations or implementation.
 - Apply [Knowledge Authority System](../docs/governance/KNOWLEDGE_AUTHORITY_SYSTEM.md) before technical implementation decisions.
 - Invoke `skills/engineering-standards/` when work touches architecture, frontend, backend, APIs, QA, testing, accessibility, performance, or security.
 - Use Research when facts may have changed.
+- Use Ivy to structure raw ideas before analysis.
+- Use Victor when market, competition, monetization, acquisition, or venture potential matters.
+- Use Pat when the new request competes with other ideas or priorities.
+- Use Irene when execution capacity needs a board decision.
 - Use Architecture when the decision affects future structure.
 - Use Modern Web Guidance for frontend engineering by default.
 - Add Mia, John, Carla, or Anton when frontend work materially affects UX, accessibility, architecture, performance, browser compatibility, or security.

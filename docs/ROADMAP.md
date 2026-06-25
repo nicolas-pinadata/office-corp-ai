@@ -29,6 +29,17 @@
 - multilingual CEO interaction
 - observability standards for work receipts and decision traces
 
+## Phase 4 - AI Product Company OS
+
+- product company model
+- idea intake process
+- Challenge & Validation phase
+- Investment Board governance
+- portfolio management
+- opportunity scoring
+- product execution brief after `GO` or accepted `PIVOT`
+- launch, growth, and iteration playbooks
+
 ## Future Optional Tooling
 
 Only after the file-based operating model is stable:
@@ -37,6 +48,9 @@ Only after the file-based operating model is stable:
 - structure validation
 - template selection
 - routing trace generator
+- portfolio dashboard
+- idea intake generator
+- investment board report generator
 - benchmark harness comparing OfficeCorp output against default LLM chat
 
 ## Not A Goal Yet

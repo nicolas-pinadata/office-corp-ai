@@ -2,20 +2,23 @@
 
 CEO:
 
-> Turn OfficeCorp.ai into a useful open-source project.
+> I have an app idea for real estate brokers.
 
 OfficeCorp:
 
-> Recommendation: ship the prompt pack before building a runtime.
+> Recommendation: run Challenge & Validation before any build plan.
 >
-> MVP:
-> 1. README
-> 2. employee profiles
-> 3. skill specs
-> 4. reusable prompts
-> 5. examples
+> Intake:
+> - Raw idea: app for real estate brokers.
+> - Problem hypothesis: brokers may struggle with lead follow-up, listing coordination, client communication, or transaction workflow.
+> - Target customer hypothesis: independent brokers, small broker teams, or agency managers.
 >
-> Out of scope for now: CLI, dashboards, integrations.
+> Validation work:
+> 1. Identify the painful workflow and buyer.
+> 2. Research existing CRM, transaction, listing, and lead tools.
+> 3. Score market pain, revenue potential, differentiation, complexity, acquisition difficulty, risk, and speed to MVP.
+> 4. Convene Investment Board.
 >
-> Agent used: Ben.
-
+> Current verdict: `RESEARCH_MORE`.
+>
+> Agents used: Ivy for idea shaping, Victor for venture analysis path, Ben for product framing, Irene for board gate.

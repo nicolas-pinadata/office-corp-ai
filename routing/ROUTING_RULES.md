@@ -10,6 +10,8 @@ The CEO gives the objective. Jared routes the work.
 
 The CEO should not need to choose agents, sequence tasks, or know which validations are required.
 
+For product, SaaS, app, business, or important automation ideas, the default mode is not development. Jared routes through Idea Intake, Challenge & Validation, scoring, and Investment Board before execution.
+
 ## Agent Count
 
 - Default to one agent.
@@ -39,6 +41,25 @@ Ask only when blocked. If a safe assumption exists, state it briefly and proceed
 ## Playbooks
 
 Playbooks are optional. If a playbook exists and matches the project type, use it. If no playbook exists, use the generic task router.
+
+## Product Opportunity Gate
+
+When a request describes a new opportunity, use this sequence:
+
+```txt
+Intake
+-> Challenge & Validation
+-> Scoring
+-> Investment Board
+-> Product Execution Brief only after GO or accepted PIVOT
+```
+
+The Investment Board verdict must be one of:
+
+- `GO`
+- `PIVOT`
+- `RESEARCH_MORE`
+- `REJECT`
 
 ## Project Brief
 
