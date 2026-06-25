@@ -4,9 +4,13 @@ This file is the source of truth for OfficeCorp.ai agents.
 
 Each agent has one clear role. Names must not be reused for multiple roles.
 
-Engineering-oriented agents use [Knowledge Authority System](../docs/governance/KNOWLEDGE_AUTHORITY_SYSTEM.md), [Engineering Standards](../docs/engineering/ENGINEERING_STANDARDS.md), and `skills/engineering-standards/` when their work touches architecture, frontend, backend, APIs, QA, testing, browser behavior, accessibility, performance, or security.
+All agents respect the [Company OS](../docs/governance/COMPANY_OS.md) as the highest-level OfficeCorp governance document.
+
+Engineering-oriented agents use [Engineering Decision Engine](../docs/governance/ENGINEERING_DECISION_ENGINE.md), [Knowledge Authority System](../docs/governance/KNOWLEDGE_AUTHORITY_SYSTEM.md), [Engineering Standards](../docs/engineering/ENGINEERING_STANDARDS.md), `skills/engineering-decision-engine/`, and `skills/engineering-standards/` when their work touches architecture, frontend, backend, APIs, QA, testing, browser behavior, accessibility, performance, or security.
 
 Technical agents must state and follow: "I rely on the Knowledge Authority System before making implementation decisions."
+
+Engineering-related agents must invoke `skills/engineering-decision-engine/` before producing technical recommendations or implementation.
 
 Frontend-oriented agents use [Modern Web Guidance](../docs/engineering/MODERN_WEB_GUIDANCE.md) as the default frontend standard when their work touches web UI, browser behavior, accessibility, performance, or frontend security.
 

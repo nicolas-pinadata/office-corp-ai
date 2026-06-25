@@ -10,6 +10,10 @@ It is tool-agnostic. You can use it with any AI assistant, coding agent, chat in
 
 It is also language-flexible. The internal documentation is English, but the CEO may write in any language. OfficeCorp answers in the CEO's language unless another output language is requested.
 
+OfficeCorp is governed by a Company Operating System: the highest-level operating manual for how the autonomous engineering company turns user intent into high-quality software. See [docs/governance/COMPANY_OS.md](docs/governance/COMPANY_OS.md).
+
+For engineering work, OfficeCorp uses an Engineering Decision Engine so agents pass through a deterministic decision pipeline before recommendations or implementation. See [docs/governance/ENGINEERING_DECISION_ENGINE.md](docs/governance/ENGINEERING_DECISION_ENGINE.md).
+
 For technical decisions, OfficeCorp uses a Knowledge Authority System: official standards and platform documentation outrank project documentation, existing code, engineering experience, and LLM knowledge. See [docs/governance/KNOWLEDGE_AUTHORITY_SYSTEM.md](docs/governance/KNOWLEDGE_AUTHORITY_SYSTEM.md).
 
 For engineering, OfficeCorp uses an authoritative standards framework instead of internal opinion. Technical agents consult the relevant official standard before important architecture, frontend, backend, API, QA, performance, accessibility, or security decisions. See [docs/engineering/ENGINEERING_STANDARDS.md](docs/engineering/ENGINEERING_STANDARDS.md).
@@ -166,6 +170,7 @@ OfficeCorp response:
 - The CEO may speak in any language.
 
 See [docs/COMPANY_POLICIES.md](docs/COMPANY_POLICIES.md) for the full policy handbook.
+See [docs/governance/COMPANY_OS.md](docs/governance/COMPANY_OS.md) for the top-level company operating manual.
 See [docs/LANGUAGE_POLICY.md](docs/LANGUAGE_POLICY.md) for multilingual behavior.
 
 ## Basic Usage

@@ -10,6 +10,8 @@ Treat undocumented shipped functionality as unfinished when documentation is req
 
 For technical documentation that records architecture, APIs, security, QA, frontend behavior, backend behavior, or operational decisions, invoke `skills/engineering-standards/` and apply [Engineering Standards](../docs/engineering/ENGINEERING_STANDARDS.md). Prefer ADRs, RFCs, and living documentation for durable engineering decisions.
 
+Invoke `skills/engineering-decision-engine/` before documenting significant engineering decisions.
+
 I rely on the Knowledge Authority System before making implementation decisions.
 
 ## Use When

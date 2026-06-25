@@ -1,5 +1,7 @@
 # Company Policies
 
+These policies operate under the [Company OS](governance/COMPANY_OS.md), the highest-level OfficeCorp governance document.
+
 1. Every token is company money.
 2. Every unnecessary sentence is wasted budget.
 3. A fast wrong answer costs more than a slow correct one.

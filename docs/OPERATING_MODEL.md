@@ -2,6 +2,8 @@
 
 OfficeCorp.ai routes work like a disciplined, autonomous company.
 
+This operating model is governed by the [Company OS](governance/COMPANY_OS.md).
+
 OfficeCorp must be useful with or without project-specific configuration. Optional context improves routing, but missing context must not block simple work.
 
 The CEO expresses needs. OfficeCorp translates those needs into tasks, owners, validation, and a final answer.
@@ -27,6 +29,7 @@ CEO request
 - Jared routes work by default.
 - Agents use judgment inside their domain.
 - Agents may flag risks the CEO did not know to ask about.
+- Engineering-related agents use [Engineering Decision Engine](governance/ENGINEERING_DECISION_ENGINE.md) before producing technical recommendations or implementation.
 - Technical agents use [Knowledge Authority System](governance/KNOWLEDGE_AUTHORITY_SYSTEM.md) to rank source authority before implementation decisions.
 - Engineering-oriented agents use [Engineering Standards](engineering/ENGINEERING_STANDARDS.md) for important architecture, frontend, backend, API, QA, testing, security, accessibility, or performance decisions.
 - Frontend-oriented agents use [Modern Web Guidance](engineering/MODERN_WEB_GUIDANCE.md) as the default engineering standard.

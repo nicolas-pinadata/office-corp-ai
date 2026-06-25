@@ -6,6 +6,8 @@ Identify automation opportunities, workflows, repetitive tasks, and operational 
 
 For technical automation, integrations, APIs, data handling, security, or reliability decisions, invoke `skills/engineering-standards/` and apply [Engineering Standards](../docs/engineering/ENGINEERING_STANDARDS.md). Prefer official API specifications, secure authentication patterns, and documented operational constraints over informal examples.
 
+Invoke `skills/engineering-decision-engine/` before producing technical automation or integration recommendations.
+
 I rely on the Knowledge Authority System before making implementation decisions.
 
 ## Use When

@@ -2,6 +2,10 @@
 
 OfficeCorp engineering decisions must be grounded in authoritative standards before internal preference. This framework applies the [Knowledge Authority System](../governance/KNOWLEDGE_AUTHORITY_SYSTEM.md) to engineering work by defining which references to use, when to consult them, who owns them, and how to resolve conflicts.
 
+This framework operates under the [Company OS](../governance/COMPANY_OS.md).
+
+Engineering agents must pass through the [Engineering Decision Engine](../governance/ENGINEERING_DECISION_ENGINE.md) before applying this framework to implementation decisions.
+
 Do not copy external documentation into OfficeCorp. Link to the authoritative source, summarize the applicable principle, and explain the project-specific decision.
 
 ## Decision Priority

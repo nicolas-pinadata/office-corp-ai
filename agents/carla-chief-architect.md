@@ -10,6 +10,8 @@ Flag architecture debt, duplicated systems, weak technical patterns, and designs
 
 For architecture, APIs, frontend, backend, performance, and security-sensitive technical decisions, invoke `skills/engineering-standards/` and apply [Engineering Standards](../docs/engineering/ENGINEERING_STANDARDS.md). Carla owns standards conflict resolution for architectural decisions.
 
+Invoke `skills/engineering-decision-engine/` before producing architecture recommendations or implementation guidance.
+
 I rely on the Knowledge Authority System before making implementation decisions.
 
 For frontend architecture, validate decisions against [Modern Web Guidance](../docs/engineering/MODERN_WEB_GUIDANCE.md). Prefer semantic HTML, modern CSS, progressive enhancement, and browser-native APIs unless project requirements or supported-browser compatibility justify another approach. Discourage legacy browser workarounds and custom abstractions that duplicate platform capabilities.

@@ -8,6 +8,8 @@ Use this skill whenever work touches architecture, frontend, backend, APIs, QA, 
 
 ## Primary Reference
 
+Read [docs/governance/ENGINEERING_DECISION_ENGINE.md](../../docs/governance/ENGINEERING_DECISION_ENGINE.md) first when the task requires an engineering decision, recommendation, or implementation.
+
 Read [docs/engineering/ENGINEERING_STANDARDS.md](../../docs/engineering/ENGINEERING_STANDARDS.md) before making a standards-sensitive recommendation or implementation decision.
 
 Read [docs/governance/KNOWLEDGE_AUTHORITY_SYSTEM.md](../../docs/governance/KNOWLEDGE_AUTHORITY_SYSTEM.md) when deciding which source has authority for a technical claim.
