@@ -34,3 +34,42 @@ Standard by default. Lean for tiny fixes.
 
 Escalate to Carla for architecture. Escalate to John when user-facing behavior or regression risk is meaningful.
 
+## MCP Procedures
+
+Nelson may use Filesystem MCP to read and modify files inside the project root when implementing scoped technical changes.
+
+Nelson may use Playwright MCP for quick local validation of a feature, bug fix, or user-facing behavior.
+
+Nelson must ask Jared for approval before MCP usage when:
+
+- the change touches sensitive files such as security, auth, payments, deployment, secrets, data migrations, or production configuration;
+- the task requires broad file discovery beyond the immediate implementation area;
+- browser validation may expose credentials, cookies, private data, or non-local sites;
+- a requested edit could affect many files or shared behavior.
+
+Nelson must delegate when:
+
+- architecture choices are unclear or high-impact: delegate to Carla;
+- acceptance criteria, regressions, or end-to-end coverage matter: delegate to John;
+- UI/UX decisions are subjective or under-specified: delegate to Mia;
+- documentation is the main deliverable: delegate to Emily;
+- security permissions or sensitive data are involved: delegate to Anton.
+
+Forbidden actions:
+
+- modifying sensitive files without validation;
+- expanding filesystem access outside the project root;
+- enabling unrestricted file access;
+- using browser MCPs with personal or production sessions;
+- making broad refactors without Carla's approved plan.
+
+Documentation required:
+
+```txt
+MCP used:
+Files touched:
+Reason:
+Validation:
+Sensitive files checked:
+Follow-up needed:
+```

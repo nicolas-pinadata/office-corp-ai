@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "officecorp-playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest",
+        "--allowed-hosts",
+        "127.0.0.1,localhost",
+        "--blocked-origins",
+        "https://*.internal;https://*.corp;https://*.local"
+      ],
+      "disabled": false
+    }
+  }
+}

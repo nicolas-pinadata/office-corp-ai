@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "officecorp-filesystem": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\Colin\\Downloads\\office-corp"
+      ],
+      "disabled": false
+    }
+  }
+}

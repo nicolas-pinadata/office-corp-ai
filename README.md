@@ -51,6 +51,34 @@ The CEO is demanding but respectful. Employees are happy, professional, and awar
 
 The CEO does not need to assign every agent. Jared coordinates by default. Direct agent calls like `@Carla` or "Keith, compress this" are supported, but they are the exception.
 
+## MCP Layer
+
+MCPs are the external tool access layer for OfficeCorp AI. They let agents reach files, browsers, tests, APIs, and services when the task justifies the extra access.
+
+The layers are:
+
+- **Agents**: intelligent roles that decide, collaborate, and own outcomes.
+- **Skills**: specialized procedures for recurring tasks.
+- **MCP**: connectors to files, browsers, tests, APIs, and services.
+- **Workflows**: sequences of work between agents.
+
+```txt
+User
+  -> Jared
+    -> Agents spécialisés
+      -> Skills
+        -> MCP
+          -> Filesystem / Browser / Playwright / APIs
+```
+
+Core MCPs:
+
+- **Filesystem MCP**: used for the repository, including project files, documentation, and scoped code changes.
+- **Playwright MCP**: used for automated tests, responsive checks, navigation, forms, and end-to-end validation.
+- **Chromium/Browser MCP**: used for visual inspection and web research through a browser.
+
+MCP use should stay narrow, temporary, and approved when risk justifies it. See [mcp/MCP_OVERVIEW.md](mcp/MCP_OVERVIEW.md), [mcp/MCP_REGISTRY.md](mcp/MCP_REGISTRY.md), and [mcp/SECURITY.md](mcp/SECURITY.md).
+
 ## Departments
 
 - **Executive**: receives CEO intent, routes work, and protects focus.
