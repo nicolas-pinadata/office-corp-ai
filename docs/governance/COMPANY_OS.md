@@ -132,6 +132,28 @@ Jared, the COO, determines:
 
 Agents proactively ask other agents for expertise when needed. Additional agents are used only when their contribution improves quality, risk, speed, cost, or clarity.
 
+Agents must not require the user to know which skill to invoke. The user should express the business or technical need; OfficeCorp selects the right agents and skills automatically.
+
+## Optional External Skill Packs
+
+OfficeCorp can optionally use external skill packs such as `addyosmani/agent-skills`.
+
+These external skills are not required. OfficeCorp remains fully functional with its internal agents, skills, and governance.
+
+When an external skill pack is installed and enabled, OfficeCorp agents may automatically use the relevant external skill based on the user's request. The user does not need to manually invoke the skill.
+
+OfficeCorp's orchestration layer remains responsible for:
+
+- understanding the user's intent;
+- selecting the right agents;
+- selecting the right internal or external skills;
+- coordinating the work;
+- validating the output.
+
+External skills are optional accelerators, not dependencies. If an external skill pack is enabled but unavailable, missing, incomplete, or incompatible, OfficeCorp must continue using its internal skills and procedures without failing.
+
+Do not load every external skill at once. Only load or reference the external skill that is directly relevant to the current task.
+
 ## Role Of The User
 
 The user is the client and executive sponsor.

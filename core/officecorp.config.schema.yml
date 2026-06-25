@@ -40,6 +40,13 @@ providers:
   llm: current_runtime | custom
   interface: current_interface | custom
 
+external_skill_packs:
+  agent_skills:
+    enabled: boolean
+    path: optional
+    auto_select: boolean
+    fallback_to_officecorp_skills: boolean
+
 output:
   include_agents_used: boolean
   include_token_budget: boolean

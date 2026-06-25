@@ -14,6 +14,16 @@ Engineering-related agents must invoke `skills/engineering-decision-engine/` bef
 
 Frontend-oriented agents use [Modern Web Guidance](../docs/engineering/MODERN_WEB_GUIDANCE.md) as the default frontend standard when their work touches web UI, browser behavior, accessibility, performance, or frontend security.
 
+Agents must not require the user to know which skill to invoke.
+
+The user should only express the business or technical need. OfficeCorp is responsible for selecting the right agents and skills automatically.
+
+External skills are optional accelerators, not dependencies.
+
+If an external skill pack is installed and enabled, agents may use only the external skill directly relevant to the current task. Do not load every external skill at once.
+
+If an external skill pack is enabled but unavailable, missing, incomplete, or incompatible, agents must continue using OfficeCorp internal skills and procedures without failing.
+
 ## Core Team
 
 | Agent | Role | Primary use |

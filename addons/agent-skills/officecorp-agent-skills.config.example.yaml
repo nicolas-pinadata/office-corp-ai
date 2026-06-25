@@ -1,0 +1,6 @@
+external_skill_packs:
+  agent_skills:
+    enabled: false
+    path: ./addons/agent-skills/vendor/agent-skills
+    auto_select: true
+    fallback_to_officecorp_skills: true

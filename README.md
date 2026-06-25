@@ -132,6 +132,28 @@ Core MCPs:
 
 MCP use should stay narrow, temporary, and approved when risk justifies it. See [mcp/MCP_OVERVIEW.md](mcp/MCP_OVERVIEW.md), [mcp/MCP_REGISTRY.md](mcp/MCP_REGISTRY.md), and [mcp/SECURITY.md](mcp/SECURITY.md).
 
+## Optional External Skill Packs
+
+OfficeCorp can optionally use external skill packs such as `addyosmani/agent-skills`.
+
+These external skills are not required. OfficeCorp remains fully functional with its internal agents, skills, and governance.
+
+When an external skill pack is installed and enabled, OfficeCorp agents may automatically use the relevant external skill based on the user's request. The user does not need to manually invoke the skill.
+
+OfficeCorp's orchestration layer remains responsible for:
+
+- understanding the user's intent;
+- selecting the right agents;
+- selecting the right internal or external skills;
+- coordinating the work;
+- validating the output.
+
+External skills are optional accelerators, not dependencies. If an external skill pack is enabled but unavailable, missing, incomplete, or incompatible, OfficeCorp must continue using its internal skills and procedures without failing.
+
+Do not load every external skill at once. Only load or reference the external skill that is directly relevant to the current task.
+
+See [addons/README.md](addons/README.md) and [addons/agent-skills/README.md](addons/agent-skills/README.md).
+
 ## Departments
 
 - **Executive**: receives CEO intent, routes work, and protects focus.

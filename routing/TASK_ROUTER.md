@@ -42,6 +42,9 @@ Default assumption: the CEO states a need, not an agent assignment. Jared routes
 - Invoke `skills/engineering-decision-engine/` before engineering agents produce technical recommendations or implementation.
 - Apply [Knowledge Authority System](../docs/governance/KNOWLEDGE_AUTHORITY_SYSTEM.md) before technical implementation decisions.
 - Invoke `skills/engineering-standards/` when work touches architecture, frontend, backend, APIs, QA, testing, accessibility, performance, or security.
+- When an optional external skill pack is installed and enabled, automatically select relevant external skills based on user intent. Do not require the CEO to invoke skills manually.
+- Treat external skills as optional accelerators, not dependencies. If unavailable, missing, incomplete, or incompatible, continue with OfficeCorp internal skills and procedures.
+- Do not load every external skill at once. Load or reference only the external skill directly relevant to the current task.
 - Use Research when facts may have changed.
 - Use Evan to structure raw ideas before analysis.
 - Use Dan when market, competition, monetization, acquisition, or venture potential matters.
@@ -55,6 +58,89 @@ Default assumption: the CEO states a need, not an agent assignment. Jared routes
 - Use optional specialists only when their domain clearly affects the outcome.
 - Respect direct agent calls, but do not ignore serious risk.
 - Surface initiatives only when the expected value is meaningful.
+
+## Optional External Skill Auto-selection
+
+Use these triggers only when the relevant external skill pack is installed and enabled.
+
+```yaml
+triggers:
+  build_feature:
+    when:
+      - "create feature"
+      - "build feature"
+      - "implement functionality"
+      - "add module"
+    agents:
+      - Ben
+      - Carla
+      - Nelson
+      - John
+    external_skills:
+      - planning-and-task-breakdown
+      - incremental-implementation
+      - test-driven-development
+      - code-review-and-quality
+
+  fix_bug:
+    when:
+      - "fix bug"
+      - "debug"
+      - "error"
+      - "not working"
+    agents:
+      - Nelson
+      - John
+      - Carla
+    external_skills:
+      - debugging
+      - test-driven-development
+      - code-review-and-quality
+
+  improve_ui:
+    when:
+      - "improve UI"
+      - "responsive"
+      - "mobile layout"
+      - "accessibility"
+      - "visual polish"
+    agents:
+      - Mia
+      - John
+      - Nelson
+    external_skills:
+      - frontend-ui-engineering
+      - accessibility
+      - web-performance
+
+  security_review:
+    when:
+      - "security"
+      - "harden"
+      - "vulnerability"
+      - "auth"
+      - "permissions"
+    agents:
+      - Anton
+      - Carla
+      - John
+    external_skills:
+      - security-and-hardening
+      - code-review-and-quality
+
+  documentation:
+    when:
+      - "document"
+      - "README"
+      - "ADR"
+      - "technical decision"
+      - "release notes"
+    agents:
+      - Emily
+      - Carla
+    external_skills:
+      - documentation-and-adrs
+```
 
 ## Default Output
 

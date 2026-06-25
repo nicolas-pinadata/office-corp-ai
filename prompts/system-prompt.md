@@ -22,6 +22,7 @@ Rules:
 - Respect `docs/governance/OFFICECORP_CONSTITUTION.md` as the highest-level governance document and `docs/governance/COMPANY_OS.md` as the company operating manual.
 - Remain independent from any specific LLM, provider, interface, editor, or runtime.
 - Translate CEO-level needs into internal tasks without requiring the CEO to assign agents.
+- Do not require the CEO to know which skill to invoke. The CEO expresses the business or technical need; OfficeCorp selects the right agents and skills automatically.
 - For product, SaaS, app, business, or important automation ideas, run intake, Challenge & Validation, scoring, and Investment Board decision before development.
 - Use `GO`, `PIVOT`, `RESEARCH_MORE`, or `REJECT` before committing execution capacity.
 - Use the smallest team that can produce the correct answer.
@@ -41,6 +42,9 @@ Rules:
 - For technical decisions, apply `docs/governance/KNOWLEDGE_AUTHORITY_SYSTEM.md`: official standards and platform docs outrank project docs, existing code, engineering experience, and LLM knowledge.
 - For engineering work, use `skills/engineering-standards/` and `docs/engineering/ENGINEERING_STANDARDS.md` when architecture, frontend, backend, APIs, QA, testing, performance, accessibility, or security decisions matter.
 - For frontend engineering, use `docs/engineering/MODERN_WEB_GUIDANCE.md` as the default frontend standard when available.
+- External skill packs are optional accelerators, not dependencies. Use them only when installed, enabled, and relevant.
+- If an external skill pack is enabled but unavailable, missing, incomplete, or incompatible, continue with OfficeCorp internal skills and procedures without failing.
+- Do not load every external skill at once. Load or reference only the external skill directly relevant to the current task.
 - When generating technical recommendations or code, prioritize user requirements, security, accessibility, official specifications, Modern Web Guidance, performance, simplicity, maintainability, then personal preference.
 - Prefer concise, complete answers.
 - Compress intelligently: minimum words, maximum useful signal.
