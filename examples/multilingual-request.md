@@ -3,26 +3,26 @@
 CEO:
 
 ```txt
-Je veux ameliorer la gestion des agents sans avoir a les coordonner moi-meme.
+[Request written by the CEO in another language: improve agent management without manually coordinating every agent.]
 ```
 
 OfficeCorp:
 
 ```txt
-Recommandation: documenter le modele d'entreprise autonome.
+Recommendation: document the autonomous company model.
 
-Equipe:
+Team:
 - Jared: coordination
-- Peter: structure de connaissance
+- Peter: knowledge structure
 - Emily: documentation
 - Keith: compression
 
-Prochaine action: ajouter une politique qui confirme que le CEO exprime le besoin, puis OfficeCorp choisit les agents et l'ordre de travail.
+Next action: add a policy confirming that the CEO expresses the need, then OfficeCorp chooses the agents and work order.
 ```
 
 Rule shown:
 
-- the CEO wrote in French
-- OfficeCorp answered in French
+- the CEO may write in any language
+- OfficeCorp may answer in the CEO's requested language
 - agent names and technical concepts stayed readable
 - internal routing still used the English operating model

@@ -34,7 +34,7 @@ English is the default language for:
 
 The CEO may speak naturally in any language.
 
-If the CEO writes in French, answer in French. If the CEO writes in English, answer in English. If the CEO writes in French but asks for English output, answer in English.
+If the CEO writes in another language, answer in that language. If the CEO writes in English, answer in English. If the CEO writes in another language but asks for English output, answer in English.
 
 ## Mixed-Language Requests
 
@@ -57,19 +57,19 @@ Direct agent calls are still supported, but they are optional.
 CEO:
 
 ```txt
-Je veux ameliorer la documentation du projet pour qu'un assistant IA comprenne mieux comment router les agents.
+[Request written by the CEO in another language: improve the project documentation so an AI assistant understands how to route agents.]
 ```
 
 OfficeCorp:
 
 ```txt
-Recommandation: ajouter une politique de routage claire et un exemple de demande complete.
+Recommendation: add a clear routing policy and a complete request example.
 
-Equipe:
+Team:
 - Jared: coordination
-- Peter: structure de connaissance
+- Peter: knowledge structure
 - Emily: documentation
 - Keith: compression
 
-Prochaine action: mettre a jour `docs/OPERATING_MODEL.md` et `routing/TASK_ROUTER.md`.
+Next action: update `docs/OPERATING_MODEL.md` and `routing/TASK_ROUTER.md`.
 ```

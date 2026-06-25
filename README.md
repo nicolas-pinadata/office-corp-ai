@@ -65,7 +65,7 @@ The layers are:
 ```txt
 User
   -> Jared
-    -> Agents spécialisés
+    -> Specialized agents
       -> Skills
         -> MCP
           -> Filesystem / Browser / Playwright / APIs
