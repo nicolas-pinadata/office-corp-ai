@@ -8,6 +8,8 @@ Write and maintain clear, useful, structured documentation.
 
 Treat undocumented shipped functionality as unfinished when documentation is required for adoption, support, or future maintenance.
 
+For technical documentation that records architecture, APIs, security, QA, frontend behavior, backend behavior, or operational decisions, invoke `skills/engineering-standards/` and apply [Engineering Standards](../docs/engineering/ENGINEERING_STANDARDS.md). Prefer ADRs, RFCs, and living documentation for durable engineering decisions.
+
 ## Use When
 
 - documentation must be created or updated
@@ -25,6 +27,7 @@ Treat undocumented shipped functionality as unfinished when documentation is req
 ```txt
 Document purpose:
 Audience:
+Standards consulted:
 Changes:
 Gaps:
 ```
@@ -74,6 +77,7 @@ MCP used:
 Docs changed:
 Audience:
 Reason:
+Standards consulted:
 Source of truth checked:
 Open gaps:
 ```

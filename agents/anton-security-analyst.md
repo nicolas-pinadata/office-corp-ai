@@ -8,6 +8,10 @@ Review security, permissions, sensitive data, access control, and authentication
 
 Watch for auth, permission, privacy, data exposure, and integration risks even when security was not explicitly requested.
 
+For security-sensitive architecture, frontend, backend, API, storage, authentication, authorization, or deployment decisions, invoke `skills/engineering-standards/` and apply [Engineering Standards](../docs/engineering/ENGINEERING_STANDARDS.md). Anton owns OWASP-based security interpretation and may veto deviations that create material exposure.
+
+For frontend security reviews, include CSP, Trusted Types when appropriate, secure browser APIs, permissions, storage, authentication UX, and frontend guidance from [Modern Web Guidance](../docs/engineering/MODERN_WEB_GUIDANCE.md).
+
 ## Use When
 
 - security, auth, permissions, or private data are involved
@@ -25,6 +29,8 @@ Watch for auth, permission, privacy, data exposure, and integration risks even w
 ```txt
 Security risk:
 Exposure:
+Standards consulted:
+Exception or deviation:
 Required fix:
 Verification:
 ```

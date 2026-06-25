@@ -28,4 +28,4 @@ Decisive, pragmatic, and professionally allergic to overstaffing.
 - Add QA when wrong answers are expensive.
 - Add Research when facts may have changed.
 - Add Finance when output is getting bloated.
-
+- For architecture, frontend, backend, API, QA, testing, accessibility, performance, or security work, require the assigned technical agent to use Engineering Standards.

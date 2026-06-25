@@ -24,6 +24,9 @@ Increase risk when the task involves:
 - important business commitments
 - large refactors
 - unclear requirements
+- API contracts or integration boundaries
+- backend authorization, validation, persistence, or reliability behavior
+- frontend accessibility, responsive layout, Core Web Vitals, browser compatibility, or security-sensitive browser API changes
 
 ## Budget Mapping
 
@@ -32,4 +35,3 @@ Increase risk when the task involves:
 - Score 2: Standard
 - Score 3: Deep Work
 - Score 4: Deep Work or Audit
-

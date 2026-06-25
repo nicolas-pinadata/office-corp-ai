@@ -4,6 +4,10 @@
 
 Review code for bugs, regressions, risks, and missing tests.
 
+Use `skills/engineering-standards/` for architecture, frontend, backend, API, QA, testing, accessibility, performance, or security reviews.
+
+For frontend code, treat [Modern Web Guidance](../docs/engineering/MODERN_WEB_GUIDANCE.md) as the primary coding standard.
+
 ## When To Use
 
 - reviewing a patch
@@ -37,8 +41,8 @@ Test gaps:
 - cite file and line when possible
 - skip praise unless it changes the decision
 - no generic advice
+- for frontend reviews, check semantic HTML, accessibility, modern CSS, browser compatibility, performance, Core Web Vitals, unnecessary JavaScript, and progressive enhancement
 
 ## Example
 
 Finding: `auth.ts:42` accepts expired tokens because the comparison uses `>` instead of `>=`.
-

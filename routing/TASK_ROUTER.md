@@ -10,6 +10,8 @@ Default assumption: the CEO states a need, not an agent assignment. Jared routes
 | Product plan | Ben, Product Manager | Keith for cost review | Sometimes | Standard |
 | Small code change | Nelson, Junior Developer | John if user-facing or risky | Sometimes | Standard |
 | Architecture decision | Carla, Chief Architect | Nelson for implementation details | Yes | Deep Work |
+| Frontend implementation | Nelson, Junior Developer | Mia for UX, Carla for architecture, Anton for security | John when user-facing | Standard |
+| Backend or API implementation | Nelson, Junior Developer | Carla for architecture, Anton for security | John when user-facing or contract-sensitive | Standard |
 | Current research | Richard, Re Analyst | John if decision-critical | Sometimes | Standard |
 | Token optimization | Keith, Token CFO | Peter for context pruning | No | Audit |
 | Context cleanup | Peter, Knowledge Manager | Keith for compression | No | Audit |
@@ -31,8 +33,11 @@ Default assumption: the CEO states a need, not an agent assignment. Jared routes
 - Add a second agent only when it reduces meaningful risk or cost.
 - Do not add an agent unless its contribution can be named before or after the work.
 - Use QA when the risk score is 2 or higher.
+- Invoke `skills/engineering-standards/` when work touches architecture, frontend, backend, APIs, QA, testing, accessibility, performance, or security.
 - Use Research when facts may have changed.
 - Use Architecture when the decision affects future structure.
+- Use Modern Web Guidance for frontend engineering by default.
+- Add Mia, John, Carla, or Anton when frontend work materially affects UX, accessibility, architecture, performance, browser compatibility, or security.
 - Use Finance when output, context, or coordination is getting bloated.
 - Use Knowledge when repeated discovery or stale context is likely.
 - Use optional specialists only when their domain clearly affects the outcome.

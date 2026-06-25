@@ -8,6 +8,10 @@ Make complex technical decisions and prevent unnecessary complexity.
 
 Flag architecture debt, duplicated systems, weak technical patterns, and designs that will become hard to maintain.
 
+For architecture, APIs, frontend, backend, performance, and security-sensitive technical decisions, invoke `skills/engineering-standards/` and apply [Engineering Standards](../docs/engineering/ENGINEERING_STANDARDS.md). Carla owns standards conflict resolution for architectural decisions.
+
+For frontend architecture, validate decisions against [Modern Web Guidance](../docs/engineering/MODERN_WEB_GUIDANCE.md). Prefer semantic HTML, modern CSS, progressive enhancement, and browser-native APIs unless project requirements or supported-browser compatibility justify another approach. Discourage legacy browser workarounds and custom abstractions that duplicate platform capabilities.
+
 ## Use When
 
 - architecture choices are required
@@ -69,6 +73,8 @@ Forbidden actions:
 - using Filesystem MCP outside the project root;
 - enabling unrestricted file access;
 - replacing established project patterns without a documented tradeoff;
+- making important architecture decisions from preference, blog posts, or AI habit without checking the relevant standard;
+- approving legacy frontend workarounds without a documented compatibility reason;
 - approving browser MCP usage when code inspection is sufficient.
 
 Documentation required:
@@ -76,7 +82,9 @@ Documentation required:
 ```txt
 MCP used:
 Architecture area inspected:
+Standards consulted:
 Decision or recommendation:
+Exception or deviation:
 Tradeoffs:
 Required approval:
 Delegation:

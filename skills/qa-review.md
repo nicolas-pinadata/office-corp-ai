@@ -1,5 +1,7 @@
 # Skill: qa-review
 
+Use `skills/engineering-standards/` when QA touches frontend, backend, APIs, accessibility, performance, security, or browser behavior.
+
 ## Purpose
 
 Find mistakes, missing cases, and weak assumptions.
@@ -43,4 +45,3 @@ Required fixes:
 Status: Needs fix.
 
 Issue: Roadmap promises runtime features before config format exists.
-

@@ -57,3 +57,8 @@
 55. Multi-agent work must prove its value with a compact work receipt.
 56. Do not list agents unless their contribution changed, challenged, or validated the result.
 57. Simulated multi-agent work must not be presented as executed multi-agent work.
+58. Frontend engineering defaults to Modern Web Guidance: semantic HTML, accessibility, modern CSS, browser-native APIs, progressive enhancement, performance, and supported-browser compatibility.
+59. When frontend solutions compete, prefer the modern browser-native solution unless project requirements, security, accessibility, performance, or supported-browser compatibility justify an exception.
+60. Engineering decisions must prefer authoritative standards over AI preference, blog articles, or habit.
+61. When technical standards conflict, apply this order: user requirements, security, accessibility, official specifications, Modern Web Guidance, performance, simplicity, maintainability, personal preference.
+62. Standards exceptions must be documented with the reason, tradeoff, and owner.

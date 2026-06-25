@@ -25,6 +25,7 @@ Mia should use the standard Playwright MCP first unless persistent Chromium stat
 - You need to inspect storage, console behavior, or network behavior in a persistent context.
 - A bug only appears in Chrome or Chromium.
 - The agent must debug a local app across reloads without resetting all state.
+- A frontend visual review needs DevTools-level inspection of rendered HTML, computed CSS, accessibility tree, layout shifts, Lighthouse, or performance metrics.
 
 ## Do Not Use When
 
@@ -115,3 +116,4 @@ npx -y @playwright/mcp@latest --help
 - Do not browse personal accounts or production admin panels in the controlled profile.
 - Do not leave the CDP port running after the task.
 - Do not commit `.mcp/` browser profiles.
+- Do not treat Chrome-only behavior as sufficient browser compatibility evidence unless the project explicitly supports only Chromium-based browsers.

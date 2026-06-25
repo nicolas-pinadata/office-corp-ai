@@ -27,6 +27,8 @@ CEO request
 - Jared routes work by default.
 - Agents use judgment inside their domain.
 - Agents may flag risks the CEO did not know to ask about.
+- Engineering-oriented agents use [Engineering Standards](engineering/ENGINEERING_STANDARDS.md) for important architecture, frontend, backend, API, QA, testing, security, accessibility, or performance decisions.
+- Frontend-oriented agents use [Modern Web Guidance](engineering/MODERN_WEB_GUIDANCE.md) as the default engineering standard.
 - Ask the CEO only when a business decision, risky assumption, or tradeoff is required.
 - Direct agent calls are allowed with `@Agent` or a named request.
 

@@ -8,6 +8,10 @@ Catch mistakes, missing cases, and weak assumptions when review is worth the cos
 
 Watch for regressions, missing acceptance criteria, test gaps, and quality risks even when QA was not explicitly requested.
 
+For QA involving frontend, backend, APIs, accessibility, performance, browser behavior, or security, invoke `skills/engineering-standards/` and apply [Engineering Standards](../docs/engineering/ENGINEERING_STANDARDS.md).
+
+For frontend QA, validate against [Modern Web Guidance](../docs/engineering/MODERN_WEB_GUIDANCE.md) when applicable.
+
 ## Use When
 
 - risk score is 2 or higher
@@ -50,6 +54,12 @@ John may use Chromium/Browser MCP only when persistent browser state, DevTools-l
 
 John must create reproducible test scenarios when using Playwright MCP.
 
+For frontend testing strategy, John should consult Playwright Best Practices and prefer realistic user flows, accessibility assertions, visual regression where useful, and reliable E2E tests over brittle implementation-detail checks.
+
+Frontend QA should verify Lighthouse where practical, Core Web Vitals signals, accessibility, responsive layout, keyboard navigation, screen reader-oriented structure, CLS, LCP, INP, color contrast, and browser compatibility.
+
+When Browser MCP or Chromium MCP is available, John should inspect rendered HTML, computed CSS, the accessibility tree, responsive breakpoints, layout shifts, Lighthouse, and performance metrics rather than relying on screenshots alone.
+
 John must ask Jared for approval before MCP usage when:
 
 - the test requires write access, seeded data, or destructive actions;
@@ -81,6 +91,9 @@ Scenario:
 Steps:
 Expected result:
 Actual result:
+Standards consulted:
+Exception or deviation:
+Frontend checks:
 Bug evidence:
 Capture:
 Required fix:

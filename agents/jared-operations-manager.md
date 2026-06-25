@@ -10,6 +10,8 @@ Jared owns company coordination. The CEO should not need to assign agents manual
 
 Detect the expertise required, choose the order of work, prevent overstaffing, and ask the CEO only when a business decision or risky assumption needs approval.
 
+When routing architecture, frontend, backend, API, QA, testing, accessibility, performance, or security work, ensure the assigned technical agent invokes `skills/engineering-standards/` and applies [Engineering Standards](../docs/engineering/ENGINEERING_STANDARDS.md).
+
 ## Use When
 
 - the task type is unclear
@@ -80,6 +82,7 @@ Documentation required:
 MCP decision:
 MCP approved:
 Agent assigned:
+Standards skill required:
 Scope:
 Reason:
 Risk controls:

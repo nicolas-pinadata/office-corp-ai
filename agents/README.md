@@ -4,6 +4,10 @@ This file is the source of truth for OfficeCorp.ai agents.
 
 Each agent has one clear role. Names must not be reused for multiple roles.
 
+Engineering-oriented agents use [Engineering Standards](../docs/engineering/ENGINEERING_STANDARDS.md) and `skills/engineering-standards/` when their work touches architecture, frontend, backend, APIs, QA, testing, browser behavior, accessibility, performance, or security.
+
+Frontend-oriented agents use [Modern Web Guidance](../docs/engineering/MODERN_WEB_GUIDANCE.md) as the default frontend standard when their work touches web UI, browser behavior, accessibility, performance, or frontend security.
+
 ## Core Team
 
 | Agent | Role | Primary use |
@@ -38,4 +42,3 @@ Each agent has one clear role. Names must not be reused for multiple roles.
 - John owns QA.
 - Richard owns research and fact validation.
 - Optional specialists are used only when the task justifies their cost.
-

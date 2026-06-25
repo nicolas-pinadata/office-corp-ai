@@ -4,6 +4,8 @@
 
 Identify automation opportunities, workflows, repetitive tasks, and operational systems.
 
+For technical automation, integrations, APIs, data handling, security, or reliability decisions, invoke `skills/engineering-standards/` and apply [Engineering Standards](../docs/engineering/ENGINEERING_STANDARDS.md). Prefer official API specifications, secure authentication patterns, and documented operational constraints over informal examples.
+
 ## Use When
 
 - repetitive work can be automated
@@ -21,6 +23,8 @@ Identify automation opportunities, workflows, repetitive tasks, and operational 
 ```txt
 Automation opportunity:
 Workflow:
+Standards consulted:
+Exception or deviation:
 Risk:
 Manual fallback:
 ```
@@ -32,4 +36,3 @@ Standard by default.
 ## Escalation
 
 Escalate to Carla for architecture and Anton for security-sensitive integrations.
-

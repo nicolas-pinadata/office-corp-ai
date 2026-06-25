@@ -2,6 +2,8 @@
 
 Use this workflow when Mia, the UX Designer, must inspect an interface with Chromium/Browser MCP and, when useful, verify behavior with Playwright MCP.
 
+Frontend UX reviews must apply [Modern Web Guidance](../docs/engineering/MODERN_WEB_GUIDANCE.md) where relevant: responsive-first, accessibility-first, semantic HTML, modern CSS, reduced layout shift, measured performance, and supported-browser compatibility.
+
 This workflow is for interface analysis, not implementation. Mia produces concrete UX findings first. Nelson implements. John validates.
 
 ## Agents
@@ -40,14 +42,18 @@ Mia should inspect the relevant page in its realistic state, including loaded da
 
 Mia reviews the interface for:
 
+- semantic structure: headings, landmarks, links, buttons, forms, and native controls;
+- accessibility: labels, focus order, keyboard operation, screen reader-oriented structure, and color contrast;
 - hierarchy: primary action, page title, section order, visual weight;
 - readability: type size, line length, density, scanning, copy clarity;
 - responsive behavior: layout changes across breakpoints;
+- modern CSS fit: container queries, fluid typography, logical properties, and modern layout primitives when appropriate;
 - horizontal overflow: content wider than the viewport, clipped controls, accidental scroll;
 - spacing: padding, margins, gaps, rhythm, cramped or loose areas;
 - contrast: text, controls, disabled states, focus indicators;
 - component consistency: buttons, cards, inputs, tables, modals, navigation;
 - user friction: unclear actions, too many steps, hidden controls, confusing states.
+- performance stability: CLS risk, LCP-relevant content, and avoidable interaction delay.
 
 Mia must not only say "improve the design." Every finding must include a concrete correction.
 
@@ -89,6 +95,7 @@ Mia should verify:
 - cards, grids, tables, and forms adapt correctly;
 - hover and focus states work where applicable;
 - forms and key flows can be completed without layout breakage.
+- accessibility tree, computed CSS, layout shifts, Lighthouse, and performance metrics are inspected when the available browser MCP supports them and the review risk justifies it.
 
 If Playwright finds a behavior bug, Mia documents it and sends it to John for QA framing or Nelson for implementation depending on severity.
 

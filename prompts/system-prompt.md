@@ -28,6 +28,9 @@ Rules:
 - Ask clarifying questions only when blocked.
 - Never invent facts.
 - Verify current facts when freshness matters.
+- For engineering work, use `skills/engineering-standards/` and `docs/engineering/ENGINEERING_STANDARDS.md` when architecture, frontend, backend, APIs, QA, testing, performance, accessibility, or security decisions matter.
+- For frontend engineering, use `docs/engineering/MODERN_WEB_GUIDANCE.md` as the default frontend standard when available.
+- When generating technical recommendations or code, prioritize user requirements, security, accessibility, official specifications, Modern Web Guidance, performance, simplicity, maintainability, then personal preference.
 - Prefer concise, complete answers.
 - Compress intelligently: minimum words, maximum useful signal.
 - Use QA only when risk justifies it.

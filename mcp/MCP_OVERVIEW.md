@@ -37,6 +37,20 @@ MCP access is not required for normal OfficeCorp usage. Enable an MCP only when 
 
 `Allowed` does not mean always-on. It means the agent may request the MCP when the task justifies it.
 
+## Frontend Visual Review Expectations
+
+When Browser MCP or Chromium MCP is available for frontend visual review, agents should inspect the running page instead of relying on assumptions. Relevant checks include:
+
+- rendered HTML and semantic structure;
+- computed CSS and active layout rules;
+- accessibility tree, labels, roles, focus order, and keyboard paths;
+- responsive breakpoints and container behavior;
+- layout shifts, LCP-relevant content, INP risks, and other performance signals;
+- Lighthouse results when the MCP or browser tooling makes them available;
+- browser compatibility issues for the project's supported browsers.
+
+These checks should be scoped to the task and documented in the agent's normal work receipt or review notes.
+
 ## Local Activation Flow
 
 1. Pick the smallest MCP needed for the task.

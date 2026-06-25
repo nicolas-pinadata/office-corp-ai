@@ -10,6 +10,10 @@ It is tool-agnostic. You can use it with any AI assistant, coding agent, chat in
 
 It is also language-flexible. The internal documentation is English, but the CEO may write in any language. OfficeCorp answers in the CEO's language unless another output language is requested.
 
+For engineering, OfficeCorp uses an authoritative standards framework instead of internal opinion. Technical agents consult the relevant official standard before important architecture, frontend, backend, API, QA, performance, accessibility, or security decisions. See [docs/engineering/ENGINEERING_STANDARDS.md](docs/engineering/ENGINEERING_STANDARDS.md).
+
+For frontend engineering, OfficeCorp adopts Google's Modern Web Guidance as its default internal standard. Frontend-oriented agents should prefer semantic HTML, accessibility-first design, modern CSS, browser-native APIs, progressive enhancement, measured performance, and supported-browser compatibility. See [docs/engineering/MODERN_WEB_GUIDANCE.md](docs/engineering/MODERN_WEB_GUIDANCE.md).
+
 Core philosophy:
 
 > Every token is company money. Every unnecessary sentence is wasted budget.
