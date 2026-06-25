@@ -93,9 +93,9 @@ remaining_uncertainty:
 
 The decision trace should not bloat normal final answers. Use the work receipt for normal CEO-facing proof.
 
-## Better Than Default LLM Test
+## Better Than Generic Model Chat Test
 
-OfficeCorp is better than a default LLM chat only if it improves at least one measurable outcome:
+OfficeCorp is better than generic model chat only if it improves at least one measurable outcome:
 
 - catches missing assumptions;
 - detects risks the CEO did not ask about;
@@ -105,7 +105,7 @@ OfficeCorp is better than a default LLM chat only if it improves at least one me
 - verifies facts or behavior when correctness depends on freshness or execution;
 - changes the final recommendation because a specialist or QA review found something.
 
-For benchmarks, compare OfficeCorp against a normal LLM answer using the same request and score:
+For benchmarks, compare OfficeCorp against a generic model answer using the same request and score:
 
 ```txt
 correctness:

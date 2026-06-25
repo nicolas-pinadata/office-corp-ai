@@ -1,15 +1,17 @@
-# Roadmap
+# Architecture Status
 
-## Phase 1 - Installable Core
+This document describes the current architecture areas represented in the repository. It should not be treated as a promise of future products, commercial offerings, or unimplemented services.
+
+## Installable Core
 
 - `.officecorp/` minimal template
 - configuration schemas
 - task router
 - risk matrix
 - token budget standards
-- optional project memory files
+- optional workspace memory files
 
-## Phase 2 - Standardized Delegation
+## Standardized Delegation
 
 - structured agent profiles
 - department routing rules
@@ -17,7 +19,7 @@
 - output formats by budget mode
 - behavioral examples
 
-## Phase 3 - Optional Extensions
+## Company Extensions
 
 - optional playbooks
 - optional project briefs
@@ -29,7 +31,7 @@
 - multilingual CEO interaction
 - observability standards for work receipts and decision traces
 
-## Phase 4 - AI Product Company OS
+## AI Product Company Framework
 
 - product company model
 - idea intake process
@@ -40,19 +42,15 @@
 - product execution brief after `GO` or accepted `PIVOT`
 - launch, growth, and iteration playbooks
 
-## Future Optional Tooling
+## LLM-Agnostic Architecture
 
-Only after the file-based operating model is stable:
+- provider architecture
+- workspace model
+- organizational memory
+- decision records
+- local files and Markdown as the default provider implementation
+- independence from a specific runtime, AI tool, orchestration framework, or vendor
 
-- local install script
-- structure validation
-- template selection
-- routing trace generator
-- portfolio dashboard
-- idea intake generator
-- investment board report generator
-- benchmark harness comparing OfficeCorp output against default LLM chat
+## Extension Boundary
 
-## Not A Goal Yet
-
-OfficeCorp.ai should not depend on a specific runtime, AI tool, orchestration framework, or vendor. Runtime implementation may come later, after the operating model is stable.
+OfficeCorp documents provider extension points without requiring those integrations to exist today. The core framework should remain stable when different interfaces, LLMs, workspace stores, knowledge sources, or memory providers are introduced.

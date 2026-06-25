@@ -1,41 +1,47 @@
 # Installation Strategy
 
-OfficeCorp.ai is a portable Git toolkit.
+OfficeCorp.ai is a portable, file-based company framework.
 
-Its core value is a set of readable, copyable operating files that any AI tool or human can inspect, version, and modify.
+Its core value is a set of readable, copyable operating files that any AI tool, LLM Provider, interface, or human can inspect, version, and modify.
 
-## Recommended Installation
+## Recommended Installation Shape
 
-## Portable Files
+Use `.officecorp/` as the portable control folder for a project or workspace:
 
-Copy a template into any project:
-
-```bash
-cp -R templates/minimal/.officecorp ./your-project/.officecorp
+```txt
+.officecorp/
+  config.yml
+  current-state.md
+  routing.yml
+  token-budget.yml
 ```
 
-Or use the rich template:
+Optional context may be added when it improves reuse:
 
-```bash
-cp -R templates/rich-project/.officecorp ./your-project/.officecorp
+```txt
+.officecorp/
+  project-brief.md
+  decisions/
+  playbooks/
 ```
 
-## Optional Local Script Later
+## Workspace Structure
 
-A future local script may copy templates and validate structure:
+For portfolio or multi-business usage, organize durable knowledge by workspace:
 
-```bash
-./officecorp install
+```txt
+workspaces/
+  {workspace-name}/
+    docs/
+    research/
+    roadmap/
+    architecture/
+    ux/
+    product/
+    marketing/
+    decisions/
 ```
-
-Possible future features:
-
-- template selection
-- agent roster validation
-- token budget checks
-- routing file validation
-- AI tool setup helpers
 
 ## Rule
 
-The core product must remain a readable, file-based toolkit.
+The core framework must remain readable, file-based, and independent from any single LLM, runtime, interface, or vendor.

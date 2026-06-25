@@ -1,12 +1,16 @@
 # OfficeCorp.ai
 
-**Your AI Product Company OS. You are the CEO.**
+**An open-source AI Product Company framework. You are the CEO.**
 
-OfficeCorp.ai is an AI Product Company Operating System: a virtual company that helps entrepreneurs validate, design, build, launch, and grow products. Every AI agent is an employee. Every department exists to turn CEO intent into the highest-value business outcome while spending the fewest possible company resources.
+OfficeCorp.ai is an open-source AI Product Company framework: a virtual company that helps entrepreneurs validate, design, build, launch, and grow products. Every AI agent is an employee. Every department exists to turn CEO intent into the highest-value business outcome while spending the fewest possible company resources.
 
 **Do not manage AI agents. Hire an AI company.**
 
-It is tool-agnostic. You can use it with any AI assistant, coding agent, chat interface, no-code builder, or manual workflow.
+OfficeCorp is LLM-agnostic. ChatGPT, Codex, Claude, Gemini, local models, coding agents, chat interfaces, no-code builders, and manual workflows are possible ways to run the company. They do not own the company logic.
+
+OfficeCorp owns its employees, governance, workflows, decision framework, playbooks, operating procedures, and knowledge organization. LLMs provide intelligence to OfficeCorp; they should not contain the business logic.
+
+Its architecture uses provider boundaries so future integrations can replace the interface, workspace, knowledge source, memory layer, or LLM without rewriting OfficeCorp's core reasoning. The default implementation is intentionally simple: local files and Markdown documentation.
 
 It is also language-flexible. The internal documentation is English, but the CEO may write in any language. OfficeCorp answers in the CEO's language unless another output language is requested.
 
@@ -15,6 +19,8 @@ OfficeCorp is grounded in a short Constitution: the stable principles from which
 OfficeCorp is operated through a Company Operating System: the top-level operating manual for how the autonomous product company turns user intent into validated opportunities, products, software, launches, and iteration loops. See [docs/governance/COMPANY_OS.md](docs/governance/COMPANY_OS.md).
 
 OfficeCorp's product company model is documented in [docs/PRODUCT_COMPANY_MODEL.md](docs/PRODUCT_COMPANY_MODEL.md). Product, SaaS, app, business, and important automation ideas pass through [docs/CHALLENGE_AND_VALIDATION.md](docs/CHALLENGE_AND_VALIDATION.md) and [docs/INVESTMENT_BOARD.md](docs/INVESTMENT_BOARD.md) before execution.
+
+OfficeCorp's provider architecture is documented in [docs/PROVIDER_ARCHITECTURE.md](docs/PROVIDER_ARCHITECTURE.md). Workspaces are documented in [docs/WORKSPACE_MODEL.md](docs/WORKSPACE_MODEL.md). Organizational memory is documented in [docs/ORGANIZATIONAL_MEMORY.md](docs/ORGANIZATIONAL_MEMORY.md).
 
 For engineering work, OfficeCorp uses an Engineering Decision Engine so agents pass through a deterministic decision pipeline before recommendations or implementation. See [docs/governance/ENGINEERING_DECISION_ENGINE.md](docs/governance/ENGINEERING_DECISION_ENGINE.md).
 
@@ -32,9 +38,11 @@ Core philosophy:
 
 > The user should not micromanage agents. The user expresses intent; OfficeCorp organizes the work.
 
+> OfficeCorp owns the reasoning. LLMs provide intelligence.
+
 ## Why It Exists
 
-Most agent systems make it easy to add more agents, more context, more steps, and more cost. Most coding agents also make it too easy to build before the business case is clear. OfficeCorp.ai starts from the opposite question:
+Most agent systems make it easy to add more agents, more context, more steps, and more cost. Many AI workflows also make it too easy to build before the business case is clear. OfficeCorp.ai starts from the opposite question:
 
 > What is the smallest team that can produce the correct answer?
 
@@ -73,9 +81,11 @@ OfficeCorp must also make non-trivial work observable. For Standard, Deep Work, 
 CEO request
 -> Scott, Executive Assistant, clarifies intent if needed
 -> Jared, COO / Operations Manager, decides routing
--> Intake and Challenge & Validation when the request is an idea, product, SaaS, business, or important automation
+-> Active workspace and relevant organizational knowledge are loaded when needed
+-> Previous decisions are consulted when they may affect the answer
+-> Clarification, Market Research, Problem Validation, Competitive Analysis, and Business Analysis when the request is an idea, product, SaaS, business, or important automation
 -> Investment Board decides GO, PIVOT, RESEARCH_MORE, or REJECT before execution
--> Product, UX, Architecture, Engineering, QA, Security, Documentation, Launch, and Growth work proceed only when justified
+-> Product Strategy, UX, Architecture, Development, QA, Documentation, Launch, and Iteration proceed only when justified
 -> Manager summarizes the decision, evidence, risks, and next action
 -> CEO receives final answer
 ```
@@ -84,7 +94,17 @@ The CEO is demanding but respectful. Employees are happy, professional, and awar
 
 The CEO does not need to assign every agent. Jared coordinates by default. Direct agent calls like `@Carla` or "Keith, compress this" are supported, but they are the exception.
 
-## MCP Layer
+## Provider And MCP Layers
+
+Providers are the capability boundaries that keep OfficeCorp independent from any single implementation.
+
+- **Workspace Provider**: identifies the active business, product, client, or initiative context.
+- **Knowledge Provider**: supplies relevant organizational knowledge.
+- **Memory Provider**: preserves durable decisions, current state, lessons learned, and reusable procedures.
+- **LLM Provider**: supplies language-model intelligence.
+- **Interface Provider**: receives user intent and returns OfficeCorp's answer.
+
+The current default is local files and Markdown. See [docs/PROVIDER_ARCHITECTURE.md](docs/PROVIDER_ARCHITECTURE.md).
 
 MCPs are the external tool access layer for OfficeCorp AI. They let agents reach files, browsers, tests, APIs, and services when the task justifies the extra access.
 
@@ -193,6 +213,8 @@ OfficeCorp response:
 
 - Every token is company money.
 - Every unnecessary sentence is wasted budget.
+- OfficeCorp owns the reasoning. LLMs provide intelligence.
+- OfficeCorp is designed around stable business processes, not around a specific AI provider.
 - A fast wrong answer costs more than a slow correct one.
 - Never schedule a meeting that can be solved with one sentence.
 - Managers summarize. Employees solve.
@@ -220,7 +242,7 @@ See [docs/LANGUAGE_POLICY.md](docs/LANGUAGE_POLICY.md) for multilingual behavior
 
 ## Installing OfficeCorp In Another Project
 
-OfficeCorp.ai can be copied into any project as a lightweight project-governance layer.
+OfficeCorp.ai can be copied into any project or workspace as a lightweight company-governance layer.
 
 Minimal install:
 
@@ -241,22 +263,36 @@ Recommended optional files:
   playbooks/
 ```
 
+Workspace-oriented structure:
+
+```txt
+workspaces/
+  {workspace-name}/
+    docs/
+    research/
+    roadmap/
+    architecture/
+    ux/
+    product/
+    marketing/
+    decisions/
+```
+
 OfficeCorp must work even when optional files are missing:
 
-- **Level 1 - No project context**: use the request and default OfficeCorp operating model.
-- **Level 2 - Basic project context**: use `.officecorp/config.yml` and `.officecorp/current-state.md` if they exist.
-- **Level 3 - Rich project context**: use optional briefs, playbooks, decisions, and domain documentation when available.
-
-Start from [templates/minimal/.officecorp/](templates/minimal/.officecorp/) or [templates/rich-project/.officecorp/](templates/rich-project/.officecorp/).
+- **Level 1 - No workspace context**: use the request and default OfficeCorp operating model.
+- **Level 2 - Basic workspace context**: use `.officecorp/config.yml` and `.officecorp/current-state.md` if they exist.
+- **Level 3 - Rich workspace context**: use workspace docs, playbooks, decisions, and domain documentation when available.
 
 OfficeCorp.ai works as a portable Git toolkit made of readable files. See [docs/INSTALLATION_STRATEGY.md](docs/INSTALLATION_STRATEGY.md).
 
-## Roadmap
+## Architecture Documents
 
-- **Phase 1 - Installable Core**: `.officecorp/` templates, config schemas, routing, risk matrix, token budgets.
-- **Phase 2 - Standardized Delegation**: structured agent profiles, task router, escalation rules, output standards.
-- **Phase 3 - Optional Extensions**: playbooks, project briefs, decision logs, rich context strategy, behavioral examples.
-- **Observability**: work receipts, decision traces, and benchmarks that show when OfficeCorp beats default LLM chat. See [docs/OBSERVABILITY.md](docs/OBSERVABILITY.md).
+- [Provider Architecture](docs/PROVIDER_ARCHITECTURE.md): LLM independence and extension points.
+- [Workspace Model](docs/WORKSPACE_MODEL.md): workspace-based organization.
+- [Organizational Memory](docs/ORGANIZATIONAL_MEMORY.md): decision memory and durable knowledge.
+- [Operating Model](docs/OPERATING_MODEL.md): routing, autonomy, context levels, and stop conditions.
+- [Observability](docs/OBSERVABILITY.md): work receipts and decision traces.
 
 ## Safety Note
 

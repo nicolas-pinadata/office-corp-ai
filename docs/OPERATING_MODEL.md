@@ -4,7 +4,9 @@ OfficeCorp.ai routes work like a disciplined, autonomous AI Product Company.
 
 This operating model is governed by the [OfficeCorp Constitution](governance/OFFICECORP_CONSTITUTION.md) and the [Company OS](governance/COMPANY_OS.md).
 
-OfficeCorp must be useful with or without project-specific configuration. Optional context improves routing, but missing context must not block simple work.
+OfficeCorp must be useful with or without workspace-specific configuration. Optional context improves routing, but missing context must not block simple work.
+
+OfficeCorp should operate through provider boundaries. The default providers are local files and Markdown, but workflows must not assume a specific LLM, interface, runtime, or storage implementation. See [Provider Architecture](PROVIDER_ARCHITECTURE.md).
 
 The CEO expresses needs. OfficeCorp translates those needs into tasks, owners, validation, decisions, execution, and a final answer.
 
@@ -18,6 +20,8 @@ OfficeCorp must also make its routing observable when complexity, risk, or multi
 CEO request
 -> Scott, Executive Assistant, clarifies intent if needed
 -> Jared, COO / Operations Manager, decides routing
+-> Active workspace and relevant organizational knowledge are loaded when needed
+-> Previous decisions are consulted when they may affect the answer
 -> Idea Intake when the request is a product, business, SaaS, app, or major automation idea
 -> Challenge & Validation
 -> Investment Board decision
@@ -31,7 +35,10 @@ CEO request
 - The CEO does not need to assign agents.
 - Jared routes work by default.
 - The CEO expresses intent; OfficeCorp organizes the work.
+- OfficeCorp decides which departments participate, which employees contribute, which workflows execute, and which validations occur.
 - OfficeCorp should not build by default. It should think, challenge, validate, and only then execute.
+- OfficeCorp retrieves relevant context from the active workspace when workspace-specific knowledge matters.
+- Employees consult previous durable decisions before proposing new direction.
 - Agents use judgment inside their domain.
 - Agents may flag risks the CEO did not know to ask about.
 - Engineering-related agents use [Engineering Decision Engine](governance/ENGINEERING_DECISION_ENGINE.md) before producing technical recommendations or implementation.
@@ -71,19 +78,19 @@ Use before a validated product, SaaS, app, business, or major automation idea mo
 
 Use when the company detects an improvement opportunity worth surfacing: stale documentation, rising regression risk, repeated work, excess token cost, duplicated architecture, or automation potential.
 
-## Context Levels
+## Workspace Context Levels
 
-## Level 1: No Project Context
+## Level 1: No Workspace Context
 
 Use only the CEO request and the default OfficeCorp operating model.
 
-## Level 2: Basic Project Context
+## Level 2: Basic Workspace Context
 
 Use `.officecorp/config.yml`, `.officecorp/current-state.md`, `.officecorp/routing.yml`, and `.officecorp/token-budget.yml` if they exist.
 
-## Level 3: Rich Project Context
+## Level 3: Rich Workspace Context
 
-Use optional files such as `project-brief.md`, playbooks, decision logs, architecture notes, and domain documentation when they are available and relevant.
+Use workspace folders such as `docs/`, `research/`, `roadmap/`, `architecture/`, `ux/`, `product/`, `marketing/`, `decisions/`, playbooks, current-state documents, and domain documentation when they are available and relevant. See [Workspace Model](WORKSPACE_MODEL.md) and [Organizational Memory](ORGANIZATIONAL_MEMORY.md).
 
 ## Stop Conditions
 

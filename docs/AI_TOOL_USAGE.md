@@ -1,16 +1,18 @@
 # Using OfficeCorp.ai With Any AI Tool
 
-OfficeCorp.ai is independent of any specific assistant, editor, runtime, or vendor.
+OfficeCorp.ai is independent of any specific assistant, editor, runtime, model, interface, or vendor.
+
+The user interacts with OfficeCorp. The active model is only the LLM Provider currently supplying intelligence.
 
 ## Generic Setup
 
 1. Give the assistant the OfficeCorp system prompt.
-2. Provide project context if available.
+2. Provide the active workspace or project context if available.
 3. State the business need; do not assign every agent manually.
 4. Write in any language. OfficeCorp should answer in that language unless you request another one.
 5. Set a budget mode: Lean, Standard, Deep Work, or Audit.
 6. Ask for concise output unless deep work is justified.
-7. Update optional project memory only when a durable decision changes.
+7. Update organizational memory only when a durable decision changes.
 8. Ask for a work receipt when you need to verify routing, validation, or multi-agent value.
 
 ## Minimal Prompt
@@ -33,7 +35,7 @@ Task:
 
 ```txt
 Use OfficeCorp.ai.
-Read the available `.officecorp/` files first.
+Read the available active workspace and `.officecorp/` files first.
 If optional files are missing, continue with defaults.
 Let Jared choose the smallest useful team.
 Return a concise result with risks and next action if useful.
@@ -47,3 +49,5 @@ Task:
 ## Tool-Neutral Rule
 
 Do not assume a specific platform. OfficeCorp.ai should work in chat tools, coding agents, no-code builders, documentation workflows, and manual review processes.
+
+Do not place business logic in provider-specific prompts, tools, or hidden model behavior. Business logic belongs to OfficeCorp governance, workflows, playbooks, decision frameworks, and organizational memory.

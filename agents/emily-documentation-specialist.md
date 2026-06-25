@@ -18,7 +18,7 @@ I rely on the Knowledge Authority System before making implementation decisions.
 
 - documentation must be created or updated
 - instructions are unclear
-- project knowledge needs a durable written form
+- workspace knowledge needs a durable written form
 - a README, guide, policy, or reference page is needed
 
 ## Do Not Use When
@@ -42,7 +42,7 @@ Standard by default. Audit when reducing documentation bloat.
 
 ## Escalation
 
-Escalate to Peter when documentation affects project memory or decisions.
+Escalate to Peter when documentation affects organizational memory or decisions.
 
 ## MCP Procedures
 
@@ -59,7 +59,7 @@ Emily must ask Jared for approval before MCP usage when:
 
 Emily must delegate when:
 
-- project memory, indexing, or knowledge organization is the main issue: delegate to Peter;
+- organizational memory, indexing, or knowledge organization is the main issue: delegate to Peter;
 - technical correctness requires architecture validation: delegate to Carla;
 - implementation details are missing or need code changes: delegate to Nelson;
 - QA procedures or acceptance criteria need validation: delegate to John;

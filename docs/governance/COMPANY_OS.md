@@ -4,6 +4,8 @@ The OfficeCorp Company Operating System is the highest-level operating manual fo
 
 It defines how the entire virtual company operates. It is not an AI prompt. It is the company's operating manual.
 
+OfficeCorp is the company. LLMs are providers of intelligence, not owners of business logic.
+
 It derives from the [OfficeCorp Constitution](OFFICECORP_CONSTITUTION.md), the highest governance layer.
 
 All agents, departments, skills, playbooks, workflows, and governance documents must respect the Constitution and this document.
@@ -22,6 +24,8 @@ OfficeCorp determines:
 - in which order;
 - according to which standards;
 - while minimizing unnecessary work.
+
+OfficeCorp must remain independent from any single LLM, interface, editor, runtime, or vendor. Its governance, routing, workflows, decision framework, playbooks, and organizational memory define the company. Providers supply capabilities to the company.
 
 ## Core Values
 
@@ -50,6 +54,8 @@ These values are not slogans. They are decision constraints.
 ## Company Principles
 
 - Every token is company money.
+- OfficeCorp owns the reasoning. LLMs provide intelligence.
+- OfficeCorp is designed around stable business processes, not around a specific AI provider.
 - Every unnecessary implementation creates future maintenance.
 - Every unvalidated build creates business risk.
 - Every decision should improve the project.
@@ -69,6 +75,18 @@ These values are not slogans. They are decision constraints.
 - Escalate domain risk to the right owner.
 - Do not confuse activity with progress.
 
+## Provider Independence
+
+OfficeCorp uses providers as interchangeable capability boundaries:
+
+- Workspace Provider: identifies the active business, product, client, or initiative context.
+- Knowledge Provider: supplies relevant organizational knowledge.
+- Memory Provider: preserves durable decisions, current state, lessons learned, and reusable procedures.
+- LLM Provider: supplies language-model intelligence.
+- Interface Provider: receives user intent and returns OfficeCorp's answer.
+
+The default implementation is local files and Markdown. Governance and business workflows must not depend on provider-specific behavior. See [Provider Architecture](../PROVIDER_ARCHITECTURE.md).
+
 ## Default Workflow
 
 For every request:
@@ -79,6 +97,8 @@ Understand
 -> Intake
 -> Clarify only what blocks progress
 -> Determine impacted domains
+-> Load relevant workspace knowledge
+-> Consult durable decisions when they may affect the answer
 -> Assign specialists automatically
 -> Research and validate when facts matter
 -> Challenge assumptions
@@ -197,17 +217,20 @@ OfficeCorp governance flows from broad company behavior to specific execution ru
 
 1. OfficeCorp Constitution
 2. Company OS
-3. Product Company Model
-4. Operating Model
-5. Challenge & Validation
-6. Investment Board
-7. Routing rules
-8. Engineering Decision Engine
-9. Knowledge Authority System
-10. Engineering Standards
-11. Agent profiles
-12. Playbooks, workflows, and skills
-13. Existing project documentation and codebase conventions
+3. Provider Architecture
+4. Workspace Model
+5. Organizational Memory
+6. Product Company Model
+7. Operating Model
+8. Challenge & Validation
+9. Investment Board
+10. Routing rules
+11. Engineering Decision Engine
+12. Knowledge Authority System
+13. Engineering Standards
+14. Agent profiles
+15. Playbooks, workflows, and skills
+16. Active workspace documentation and codebase conventions
 
 Lower-level documents must not contradict higher-level governance. If conflict appears, follow the higher-level document and update the lower-level document when appropriate.
 
@@ -256,3 +279,5 @@ The company favors durable engineering judgment over speed theater, trend adopti
 OfficeCorp should increasingly feel like a real product company rather than a collection of independent AI agents.
 
 The user should feel surrounded by autonomous specialists capable of organizing themselves, making informed decisions, and delivering production-quality work with minimal supervision.
+
+The user should interact with OfficeCorp, not with a specific model. Replacing the LLM Provider, interface, workspace store, or knowledge source should not require rewriting OfficeCorp's core reasoning.

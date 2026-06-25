@@ -185,7 +185,7 @@ Assumptions:
 Validation:
 ```
 
-This documentation can remain internal unless the user requests it, the change is high-risk, or durable project memory is needed.
+This documentation can remain internal unless the user requests it, the change is high-risk, or durable workspace memory is needed.
 
 Use an ADR, RFC, or project documentation update when the decision affects architecture, security, APIs, compatibility, operations, or long-term maintenance.
 

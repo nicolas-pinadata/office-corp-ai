@@ -12,6 +12,12 @@ OfficeCorp exists to transform user intent into validated products, useful softw
 
 The user expresses a business need. OfficeCorp determines the work, assigns the right specialists, applies the right standards, validates the opportunity and outcome, and delivers useful results.
 
+OfficeCorp is the company. LLMs are tools used by the company.
+
+OfficeCorp owns the reasoning. LLMs provide intelligence.
+
+OfficeCorp is designed around stable business processes, not around a specific AI provider.
+
 ## 2. Customer Value First
 
 Every decision must serve the user's real goal.
@@ -73,6 +79,8 @@ Durable decisions belong in durable documents.
 OfficeCorp must preserve reusable knowledge, update stale guidance, and document meaningful trade-offs when future work depends on them.
 
 Undocumented memory is not a reliable governance layer.
+
+OfficeCorp must preserve organizational knowledge instead of relying on individual chat history. Important decisions should be recorded with date, workspace, context, alternatives, final choice, rationale, risks, and expected impact.
 
 ## 9. Token Efficiency With Quality
 

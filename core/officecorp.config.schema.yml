@@ -1,9 +1,14 @@
-project:
+workspace:
   name: string
   type: string
   stage: string
   stack:
     - string
+  path: optional
+
+project:
+  deprecated_alias_for: workspace
+  supported_for_backward_compatibility: true
 
 defaults:
   budget_mode: lean | standard | deep_work | audit
@@ -16,10 +21,24 @@ defaults:
   routing_mode: autonomous | direct_agent
 
 context:
+  workspace_docs: optional
+  research: optional
+  roadmap: optional
+  architecture: optional
+  ux: optional
+  product: optional
+  marketing: optional
   project_brief: optional
   playbooks: optional
   decisions: optional
   current_state: recommended
+
+providers:
+  workspace: local_filesystem | custom
+  knowledge: markdown | custom
+  memory: markdown | custom
+  llm: current_runtime | custom
+  interface: current_interface | custom
 
 output:
   include_agents_used: boolean

@@ -1,36 +1,36 @@
 # Product Company Model
 
-OfficeCorp.ai is an AI Product Company Operating System.
+OfficeCorp.ai is an open-source AI Product Company framework.
 
-It is not only a multi-agent coding framework. It is a virtual company for entrepreneurs that can receive an idea, structure it, challenge it, validate it, decide whether it deserves investment, then organize design, development, launch, growth, and iteration.
+It is not a software-development-first framework. It is a virtual company for entrepreneurs that can receive an idea, structure it, challenge it, validate it, decide whether it deserves investment, then organize design, development, launch, growth, and iteration.
 
 ## Positioning
 
 OfficeCorp is:
 
-> An AI Product Company Operating System — a virtual company that helps entrepreneurs validate, design, build, launch, and grow products.
+> An open-source AI Product Company framework: a virtual company that helps entrepreneurs validate, design, build, launch, and grow products.
 
 Software development is an important company capability, but it is not the default first step for product, SaaS, app, business, or major automation ideas.
+
+OfficeCorp is LLM-agnostic. It should run through different LLM Providers and interfaces without changing its internal business logic, governance, workflows, or decision framework.
 
 ## Default Product Flow
 
 ```txt
-Idea / Business Need
--> Intake
+Idea
 -> Clarification
 -> Market Research
 -> Problem Validation
 -> Competitive Analysis
--> Business Model
--> Risk Analysis
--> Investment Board Decision
+-> Business Analysis
+-> Investment Decision
 -> Product Strategy
--> UX / Architecture
+-> UX
+-> Architecture
 -> Development
--> QA / Security
+-> QA
 -> Documentation
 -> Launch
--> Growth
 -> Iteration
 ```
 
@@ -44,6 +44,8 @@ The flow may be compressed for low-risk work, but Challenge & Validation and an 
 - OfficeCorp is responsible for identifying the right departments and sequence.
 - Development begins after `GO` or after a `PIVOT` has been accepted as the new direction.
 - A rejected idea is a good outcome when it prevents wasted capital, time, or focus.
+- OfficeCorp owns its employees, governance, workflows, decision framework, playbooks, operating procedures, and knowledge organization.
+- LLMs provide intelligence but do not own OfficeCorp business logic.
 
 ## Company Capabilities
 
@@ -54,7 +56,7 @@ OfficeCorp can support the full product lifecycle:
 - problem validation;
 - customer and persona definition;
 - competitive analysis;
-- business model analysis;
+- business analysis;
 - pricing and revenue thinking;
 - risk analysis;
 - portfolio prioritization;
@@ -84,4 +86,3 @@ Examples that may go directly to execution:
 - "Update this README."
 - "Refactor this component."
 - "Add this validated feature to the existing product."
-

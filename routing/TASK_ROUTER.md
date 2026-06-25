@@ -21,7 +21,7 @@ Default assumption: the CEO states a need, not an agent assignment. Jared routes
 | Quality review | John, QA Analyst | Primary specialist for revision | No | Standard |
 | UX/UI work | Mia, UX Designer | John for acceptance criteria | Sometimes | Standard |
 | Security review | Anton, Security Analyst | Carla for architecture | Yes | Deep Work |
-| Documentation | Emily, Documentation Specialist | Peter for project memory | Sometimes | Standard |
+| Documentation | Emily, Documentation Specialist | Peter for organizational memory | Sometimes | Standard |
 | Marketing | Laurie, Marketing Strategist | Ben for product scope | No | Standard |
 | Customer success | Jack, Customer Success Manager | Mia or Emily if needed | Sometimes | Standard |
 | Business analysis | Ed, Finance / Business Analyst | Keith for token economics | Sometimes | Standard |

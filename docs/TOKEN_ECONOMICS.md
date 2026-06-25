@@ -74,4 +74,4 @@ See [COMMUNICATION_MODES.md](COMMUNICATION_MODES.md).
 - Can the final answer be half as long?
 - Does this paragraph change the CEO's decision?
 - Did each extra agent change quality, risk, cost, speed, or clarity?
-- Would a default LLM answer have produced the same result with fewer tokens?
+- Would generic model chat have produced the same result with fewer tokens?

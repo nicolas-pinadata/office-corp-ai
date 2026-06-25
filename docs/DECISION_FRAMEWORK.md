@@ -4,6 +4,8 @@ OfficeCorp uses a simple 1 to 5 scoring model for product, SaaS, app, business, 
 
 The score supports judgment. It does not replace judgment.
 
+Before proposing a new decision, OfficeCorp should consult relevant previous decisions in the active workspace when they are available.
+
 ## Scoring Categories
 
 | Category | 1 means | 5 means |
@@ -49,3 +51,20 @@ Do not average raw risk, raw difficulty, or raw complexity without inversion.
 
 If market evidence is weak, the report must label scores as hypothesis scores and recommend the smallest research step that would improve confidence.
 
+## Decision Memory
+
+Important decisions should be recorded so OfficeCorp preserves institutional knowledge.
+
+Each decision record should contain:
+
+- date;
+- workspace;
+- decision;
+- context;
+- alternatives considered;
+- final choice;
+- rationale;
+- risks;
+- expected impact.
+
+Employees should consult previous decisions before proposing a new direction. If a new recommendation conflicts with a previous decision, identify what changed and whether the old decision should be kept, amended, or superseded.
