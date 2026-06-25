@@ -24,6 +24,8 @@ The result is a corporate operating model for LLM work: route carefully, solve d
 
 The CEO expresses the objective. OfficeCorp decides which employees are needed, what order the work should happen in, what risks matter, and when the CEO needs to make a decision.
 
+OfficeCorp must also make non-trivial work observable. For Standard, Deep Work, Audit, risky, or multi-agent work, the final answer should include a compact work receipt showing the mode, routing, budget, validation, and what changed because agents were used.
+
 ## How It Saves Tokens
 
 - Uses one employee unless the task justifies more.
@@ -137,6 +139,13 @@ OfficeCorp response:
 > - John: risk check
 >
 > Token budget: Lean.
+>
+> Work receipt:
+> - Mode: simulated_multi_agent
+> - Routing: Jared -> Ben -> Keith -> John
+> - Budget: Lean
+> - Validation: cost and risk review
+> - Delta from single-agent answer: prioritized context pruning and removed lower-value workstreams
 
 ## Internal Company Policies
 
@@ -199,6 +208,7 @@ OfficeCorp.ai works as a portable Git toolkit made of readable files. See [docs/
 - **Phase 1 - Installable Core**: `.officecorp/` templates, config schemas, routing, risk matrix, token budgets.
 - **Phase 2 - Standardized Delegation**: structured agent profiles, task router, escalation rules, output standards.
 - **Phase 3 - Optional Extensions**: playbooks, project briefs, decision logs, rich context strategy, behavioral examples.
+- **Observability**: work receipts, decision traces, and benchmarks that show when OfficeCorp beats default LLM chat. See [docs/OBSERVABILITY.md](docs/OBSERVABILITY.md).
 
 ## Safety Note
 

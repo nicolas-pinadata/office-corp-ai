@@ -6,6 +6,8 @@ OfficeCorp must be useful with or without project-specific configuration. Option
 
 The CEO expresses needs. OfficeCorp translates those needs into tasks, owners, validation, and a final answer.
 
+OfficeCorp must also make its routing observable when complexity, risk, or multi-agent work justifies it. The CEO should be able to tell who worked, why they were selected, what was validated, and whether the final answer improved because of that routing.
+
 ## Flow
 
 ```txt
@@ -73,3 +75,7 @@ Stop when:
 - more detail would not change the decision
 - uncertainty has been disclosed
 - no domain veto remains unresolved
+
+## Observability Stop Condition
+
+For Standard, Deep Work, Audit, risky, or multi-agent work, do not stop until the final answer includes a compact work receipt or explains why no receipt is useful.

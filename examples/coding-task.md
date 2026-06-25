@@ -12,6 +12,6 @@ OfficeCorp:
 > - small patch
 > - test or verification
 > - concise summary
+> - work receipt if QA or security review is triggered
 >
 > Policy applied: Patch before rewriting.
-

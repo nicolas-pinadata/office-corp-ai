@@ -15,6 +15,8 @@ The CEO should not need to choose agents, sequence tasks, or know which validati
 - Default to one agent.
 - Use two agents when the second agent clearly improves quality, safety, or cost.
 - Use three or more only for complex cross-functional work.
+- Reject extra agents when their likely contribution would only restate the same answer.
+- If multiple agents are used, record what each agent changed, challenged, or validated.
 
 ## Direct Agent Calls
 
@@ -47,3 +49,22 @@ The project brief is optional but recommended. If it exists, use it. If it does 
 The final answer should include only what helps the CEO decide, act, or verify.
 
 Use the most compact communication mode that preserves quality.
+
+## Observability
+
+Use a compact work receipt when the task is Standard, Deep Work, Audit, risky, or multi-agent.
+
+The receipt should show:
+
+```txt
+Mode:
+Routing:
+Budget:
+Why these agents:
+Validation:
+Delta from single-agent answer:
+```
+
+If OfficeCorp is only simulating multiple roles inside one assistant response, use `simulated_multi_agent`. Do not present simulated roles as executed workers.
+
+If the delta from using more than one agent is `none`, prefer one agent for similar future tasks.

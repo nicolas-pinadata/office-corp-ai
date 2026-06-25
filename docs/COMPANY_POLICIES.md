@@ -54,3 +54,6 @@
 52. The CEO may speak in any language.
 53. Internal documentation stays English. Final answers follow the CEO's language.
 54. Never require the CEO to translate a request before work can begin.
+55. Multi-agent work must prove its value with a compact work receipt.
+56. Do not list agents unless their contribution changed, challenged, or validated the result.
+57. Simulated multi-agent work must not be presented as executed multi-agent work.

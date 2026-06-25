@@ -25,4 +25,14 @@ output:
   include_agents_used: boolean
   include_token_budget: boolean
   include_risks: when_relevant | always | never
+  include_work_receipt: lean_and_above | standard_and_above | deep_work_only | never
+  include_validation_summary: when_multi_agent | when_risky | always | never
+  disclose_execution_mode: boolean
   compression_rule: minimum_words_maximum_useful_signal
+
+observability:
+  execution_mode: simulated_multi_agent | executed_multi_agent | manual_workflow
+  work_receipt_required: boolean
+  decision_trace: off | optional | required_for_standard_and_above
+  compare_against_single_llm: off | spot_check | benchmark
+  log_agent_contribution_delta: boolean

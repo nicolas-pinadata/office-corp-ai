@@ -11,4 +11,5 @@ OfficeCorp:
 > Budget: Lean.
 >
 > Result: Review the copy directly. Add John only if the copy affects legal, pricing, or user trust.
-
+>
+> Work receipt omitted: low-risk Lean task with one agent.

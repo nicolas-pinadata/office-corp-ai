@@ -32,6 +32,7 @@ Token savings must not remove the details needed to understand, verify, or act. 
 - short reasoning
 - concrete steps
 - risks when relevant
+- compact work receipt when routing or validation matters
 
 ## Deep Work
 
@@ -41,6 +42,7 @@ Token savings must not remove the details needed to understand, verify, or act. 
 - plan
 - risks
 - validation
+- work receipt with agent contribution delta
 
 ## Audit
 
@@ -49,6 +51,7 @@ Token savings must not remove the details needed to understand, verify, or act. 
 - what should be compressed
 - optimized version
 - remaining risk
+- whether multi-agent routing created enough value to justify its cost
 
 ## Communication Compression
 
@@ -70,3 +73,5 @@ See [COMMUNICATION_MODES.md](COMMUNICATION_MODES.md).
 - Is QA justified by risk?
 - Can the final answer be half as long?
 - Does this paragraph change the CEO's decision?
+- Did each extra agent change quality, risk, cost, speed, or clarity?
+- Would a default LLM answer have produced the same result with fewer tokens?

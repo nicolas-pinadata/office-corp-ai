@@ -13,6 +13,7 @@ Summarize specialist work into a concise decision-ready answer for the CEO.
 - combine employee outputs
 - remove duplication
 - preserve risks and decisions
+- preserve the evidence of who changed or validated the result
 - produce the final answer
 
 ## Rules
@@ -21,6 +22,8 @@ Summarize specialist work into a concise decision-ready answer for the CEO.
 - Do not add new scope.
 - Do not rewrite everything unless clarity requires it.
 - Keep only what changes the CEO's decision.
+- Include a compact work receipt when the response is Standard, Deep Work, Audit, risky, or multi-agent.
+- If multiple agents were used, say what changed because of them.
 
 ## Output Format
 
@@ -31,5 +34,5 @@ Risks:
 Next action:
 Agents used:
 Token budget:
+Work receipt:
 ```
-

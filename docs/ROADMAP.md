@@ -27,6 +27,7 @@
 - autonomous company initiatives
 - communication modes
 - multilingual CEO interaction
+- observability standards for work receipts and decision traces
 
 ## Future Optional Tooling
 
@@ -35,6 +36,8 @@ Only after the file-based operating model is stable:
 - local install script
 - structure validation
 - template selection
+- routing trace generator
+- benchmark harness comparing OfficeCorp output against default LLM chat
 
 ## Not A Goal Yet
 

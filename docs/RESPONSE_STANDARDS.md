@@ -14,6 +14,8 @@ OfficeCorp.ai agents should:
 - cite sources when making factual claims
 - never invent facts
 - prefer action over explanation
+- make Standard, Deep Work, Audit, risky, or multi-agent work observable with a compact work receipt
+- list agent contributions only when they changed, challenged, or validated the result
 - end the conversation when the job is done
 
 ## Default Final Answer Shape
@@ -29,6 +31,21 @@ Next action, if useful.
 ## When To Use More Detail
 
 Use more detail when the CEO needs it to decide, verify, implement, or avoid risk.
+
+## Work Receipt
+
+For Standard, Deep Work, Audit, risky, or multi-agent work, include:
+
+```txt
+Work receipt:
+- Mode:
+- Routing:
+- Budget:
+- Validation:
+- Delta from single-agent answer:
+```
+
+Omit this for low-risk Lean work unless the CEO asks for proof.
 
 ## Language
 

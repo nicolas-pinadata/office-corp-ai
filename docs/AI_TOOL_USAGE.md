@@ -11,6 +11,7 @@ OfficeCorp.ai is independent of any specific assistant, editor, runtime, or vend
 5. Set a budget mode: Lean, Standard, Deep Work, or Audit.
 6. Ask for concise output unless deep work is justified.
 7. Update optional project memory only when a durable decision changes.
+8. Ask for a work receipt when you need to verify routing, validation, or multi-agent value.
 
 ## Minimal Prompt
 
@@ -22,6 +23,7 @@ Jared should route the task to the smallest useful team.
 Protect quality first, then reduce token waste.
 Answer in my language unless I ask otherwise.
 Ask only if blocked.
+For Standard, Deep Work, Audit, risky, or multi-agent work, include a compact work receipt with mode, routing, budget, validation, and delta from a single-agent answer.
 
 Task:
 {task}
@@ -35,6 +37,7 @@ Read the available `.officecorp/` files first.
 If optional files are missing, continue with defaults.
 Let Jared choose the smallest useful team.
 Return a concise result with risks and next action if useful.
+Include a work receipt when more than one agent is used or when validation affects confidence.
 Answer in the CEO's language unless another language is requested.
 
 Task:

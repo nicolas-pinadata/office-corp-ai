@@ -29,6 +29,7 @@ Default assumption: the CEO states a need, not an agent assignment. Jared routes
 
 - Start with one agent.
 - Add a second agent only when it reduces meaningful risk or cost.
+- Do not add an agent unless its contribution can be named before or after the work.
 - Use QA when the risk score is 2 or higher.
 - Use Research when facts may have changed.
 - Use Architecture when the decision affects future structure.
@@ -47,3 +48,19 @@ Result:
 Risk:
 Next action:
 ```
+
+## Work Receipt Output
+
+Use this output for Standard, Deep Work, Audit, risky, or multi-agent work:
+
+```txt
+Work receipt:
+- Mode:
+- Routing:
+- Budget:
+- Why these agents:
+- Validation:
+- Delta from single-agent answer:
+```
+
+For Lean work, include the work receipt only when the CEO asks for proof or when the routing itself matters.
