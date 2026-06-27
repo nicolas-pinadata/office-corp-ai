@@ -266,6 +266,28 @@ See [docs/LANGUAGE_POLICY.md](docs/LANGUAGE_POLICY.md) for multilingual behavior
 
 OfficeCorp.ai can be copied into any project or workspace as a lightweight company-governance layer.
 
+### Agent Integration
+
+Agent-oriented install:
+
+```txt
+target-project/
+  AGENTS.md
+  office-corp/
+    README.md
+    routing/
+    docs/
+    agents/
+    playbooks/
+    skills/
+```
+
+Copy this repository into the target project as `office-corp/`, then copy or adapt the provided root [AGENTS.md](AGENTS.md) into the target project root. Agent-specific templates are available in [templates/agents/](templates/agents/), including `AGENTS.md`, `CLAUDE.md`, and `cursor-rules.md`.
+
+Coding agents should treat OfficeCorp as local project guidance. They should read `office-corp/README.md`, route the task through `office-corp/routing/TASK_ROUTER.md`, then load only the relevant files from `office-corp/docs`, `office-corp/agents`, `office-corp/playbooks`, and `office-corp/skills`.
+
+OfficeCorp instructions never override higher-priority system, developer, platform, or user instructions. See [docs/AGENT_INTEGRATION.md](docs/AGENT_INTEGRATION.md).
+
 Minimal install:
 
 ```txt
