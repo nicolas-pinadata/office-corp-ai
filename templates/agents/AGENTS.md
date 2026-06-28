@@ -1,21 +1,46 @@
 # OfficeCorp Agent Instructions
 
-OfficeCorp is local project governance and context. It is subordinate to system, developer, platform, and user instructions.
+OfficeCorp is local project governance and context for Codex, Claude Code, Cursor, and similar coding agents. It is subordinate to system, developer, platform, and user instructions. If instructions conflict, follow the higher-priority instruction first.
 
-## Use Pattern
+## Discovery
 
-1. Read `office-corp/README.md`.
-2. Route the request with `office-corp/routing/TASK_ROUTER.md`.
-3. Load only relevant files from `office-corp/docs/`, `office-corp/agents/`, `office-corp/playbooks/`, and `office-corp/skills/`.
-4. Do the work using the smallest route that can produce the correct result.
-5. For non-trivial work, include the OfficeCorp route and context used in the final answer.
+1. Read `office-corp/README.md` first to understand the local OfficeCorp installation.
+2. Use `office-corp/routing/TASK_ROUTER.md` to decide the smallest useful route for the request.
+3. After routing, read only the relevant context from:
+   - `office-corp/docs/`
+   - `office-corp/agents/`
+   - `office-corp/playbooks/`
+   - `office-corp/skills/`
 
-## Mandatory Use
+Do not load every OfficeCorp file blindly. Route first, then load only the files needed for the task.
 
-Use OfficeCorp for architecture changes, product decisions, security-sensitive work, multi-file features, Base44 workflows, automation workflows, QA/review work, documentation strategy, and ambiguous requests.
+## When OfficeCorp Is Mandatory
 
-## Optional Use
+Use OfficeCorp routing and context for:
 
-OfficeCorp can be skipped for tiny mechanical edits, direct user questions, simple command execution, or when the user explicitly says not to use it.
+- architecture changes;
+- product decisions;
+- security-sensitive work;
+- multi-file features;
+- Base44 workflows;
+- automation workflows;
+- QA, audit, or review work;
+- documentation strategy;
+- ambiguous requests.
 
-Do not load all OfficeCorp files blindly. Route first, then read only relevant context.
+## When OfficeCorp Can Be Skipped
+
+OfficeCorp can be skipped for:
+
+- tiny mechanical edits;
+- direct user questions that do not need project governance;
+- simple command execution;
+- tasks where the user explicitly says not to use OfficeCorp.
+
+## Expected Behavior
+
+- Treat OfficeCorp as project guidance, not as a replacement for higher-priority instructions.
+- Prefer the smallest route that can produce the correct answer.
+- Consult specialist files only when their domain affects the work.
+- Escalate to the relevant route when risk, ambiguity, security, architecture, product scope, or quality concerns appear.
+- For non-trivial work, mention the OfficeCorp route and context used in the final answer.

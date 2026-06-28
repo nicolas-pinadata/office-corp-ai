@@ -69,12 +69,17 @@ Use a compact receipt when useful:
 
 ```txt
 Work receipt:
-- Route:
+- Mode: simulated_multi_agent | executed_multi_agent | manual_workflow
+- Routing:
+- Budget:
 - Context used:
 - Validation:
+- Delta from single-agent answer:
 ```
 
 For trivial work where OfficeCorp was skipped, no receipt is required unless the user asks for one.
+
+Use `executed_multi_agent` only when separate agents, workers, tool sessions, or delegated processes actually performed assigned work. If one assistant applied multiple roles internally, use `simulated_multi_agent`. Use `manual_workflow` when a human or tool operator followed OfficeCorp routing manually.
 
 ## Token Discipline
 

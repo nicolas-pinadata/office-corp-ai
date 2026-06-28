@@ -4,6 +4,8 @@ Use the smallest team that can produce the correct answer.
 
 Default assumption: the CEO states a need, not an agent assignment. Jared routes work unless the CEO directly calls a specific agent.
 
+Use [ROUTE_PLAYBOOKS.md](ROUTE_PLAYBOOKS.md) after selecting a route when you need triggers, files to read, output format, validation minimums, or stop conditions.
+
 | Request type | Primary agent | Optional support | QA? | Budget |
 | --- | --- | --- | --- | --- |
 | Simple answer | Scott, Executive Assistant | None | No | Lean |
@@ -158,7 +160,7 @@ Use this output for Standard, Deep Work, Audit, risky, or multi-agent work:
 
 ```txt
 Work receipt:
-- Mode:
+- Mode: simulated_multi_agent | executed_multi_agent | manual_workflow
 - Routing:
 - Budget:
 - Why these agents:
@@ -167,3 +169,5 @@ Work receipt:
 ```
 
 For Lean work, include the work receipt only when the CEO asks for proof or when the routing itself matters.
+
+Use `executed_multi_agent` only when separate agents, workers, tools, sessions, or delegated processes actually performed assigned work. If one assistant applied several roles internally, use `simulated_multi_agent`.

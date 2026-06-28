@@ -42,6 +42,8 @@ Ask only when blocked. If a safe assumption exists, state it briefly and proceed
 
 Playbooks are optional. If a playbook exists and matches the project type, use it. If no playbook exists, use the generic task router.
 
+Use [ROUTE_PLAYBOOKS.md](ROUTE_PLAYBOOKS.md) after `TASK_ROUTER.md` selects a route and the route needs triggers, files to read, validation, output format, or stop conditions.
+
 ## Product Opportunity Gate
 
 When a request describes a new opportunity, use this sequence:
@@ -78,7 +80,7 @@ Use a compact work receipt when the task is Standard, Deep Work, Audit, risky, o
 The receipt should show:
 
 ```txt
-Mode:
+Mode: simulated_multi_agent | executed_multi_agent | manual_workflow
 Routing:
 Budget:
 Why these agents:
@@ -87,5 +89,7 @@ Delta from single-agent answer:
 ```
 
 If OfficeCorp is only simulating multiple roles inside one assistant response, use `simulated_multi_agent`. Do not present simulated roles as executed workers.
+
+Use `executed_multi_agent` only when separate agents, workers, tools, sessions, or delegated processes actually performed assigned work. Use `manual_workflow` when a human or tool operator applied OfficeCorp routing without claiming agent execution.
 
 If the delta from using more than one agent is `none`, prefer one agent for similar future tasks.

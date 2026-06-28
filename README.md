@@ -18,6 +18,8 @@ OfficeCorp is grounded in a short Constitution: the stable principles from which
 
 OfficeCorp is operated through a Company Operating System: the top-level operating manual for how the autonomous product company turns user intent into validated opportunities, products, software, launches, and iteration loops. See [docs/governance/COMPANY_OS.md](docs/governance/COMPANY_OS.md).
 
+For document authority, see [docs/SOURCE_OF_TRUTH.md](docs/SOURCE_OF_TRUTH.md). It explains which file wins for routing, final answers, agent integration, observability, installation, memory, and technical standards.
+
 OfficeCorp's product company model is documented in [docs/PRODUCT_COMPANY_MODEL.md](docs/PRODUCT_COMPANY_MODEL.md). Product, SaaS, app, business, and important automation ideas pass through [docs/CHALLENGE_AND_VALIDATION.md](docs/CHALLENGE_AND_VALIDATION.md) and [docs/INVESTMENT_BOARD.md](docs/INVESTMENT_BOARD.md) before execution.
 
 OfficeCorp's provider architecture is documented in [docs/PROVIDER_ARCHITECTURE.md](docs/PROVIDER_ARCHITECTURE.md). Workspaces are documented in [docs/WORKSPACE_MODEL.md](docs/WORKSPACE_MODEL.md). Organizational memory is documented in [docs/ORGANIZATIONAL_MEMORY.md](docs/ORGANIZATIONAL_MEMORY.md).
@@ -256,11 +258,13 @@ See [docs/LANGUAGE_POLICY.md](docs/LANGUAGE_POLICY.md) for multilingual behavior
 ## Basic Usage
 
 1. Start with [prompts/system-prompt.md](prompts/system-prompt.md).
-2. Use [routing/TASK_ROUTER.md](routing/TASK_ROUTER.md) to choose the smallest useful team.
+2. Use [routing/TASK_ROUTER.md](routing/TASK_ROUTER.md) to choose the smallest useful team. Use [routing/ROUTE_PLAYBOOKS.md](routing/ROUTE_PLAYBOOKS.md) when a route needs triggers, files, output format, validation, or stop conditions.
 3. For product, SaaS, app, business, or important automation ideas, run [docs/IDEA_INTAKE_PROCESS.md](docs/IDEA_INTAKE_PROCESS.md), [docs/CHALLENGE_AND_VALIDATION.md](docs/CHALLENGE_AND_VALIDATION.md), and [docs/INVESTMENT_BOARD.md](docs/INVESTMENT_BOARD.md) before execution.
 4. Pick one structured profile from [agents/](agents/) or one department profile from [departments/](departments/).
 5. Add QA, Finance, Research, Architecture, UX, Security, Marketing, or Growth only when risk or decision quality justifies the cost.
 6. Return the shortest complete answer.
+
+For copy-paste Codex requests, see [prompts/ready-to-use.md](prompts/ready-to-use.md).
 
 ## Installing OfficeCorp In Another Project
 
@@ -304,7 +308,7 @@ git add AGENTS.md office-corp
 git commit -m "Update OfficeCorp agent integration"
 ```
 
-See [docs/INSTALLATION_STRATEGY.md](docs/INSTALLATION_STRATEGY.md) for the full downstream adoption procedure and [docs/AGENT_INTEGRATION.md](docs/AGENT_INTEGRATION.md) for expected agent behavior.
+See [docs/INSTALLATION_STRATEGY.md](docs/INSTALLATION_STRATEGY.md) for the full downstream adoption procedure, [docs/INSTALLATION_CHECK.md](docs/INSTALLATION_CHECK.md) for the verification checklist, and [docs/AGENT_INTEGRATION.md](docs/AGENT_INTEGRATION.md) for expected agent behavior.
 
 ## Architecture Documents
 
@@ -313,6 +317,7 @@ See [docs/INSTALLATION_STRATEGY.md](docs/INSTALLATION_STRATEGY.md) for the full 
 - [Organizational Memory](docs/ORGANIZATIONAL_MEMORY.md): decision memory and durable knowledge.
 - [Operating Model](docs/OPERATING_MODEL.md): routing, autonomy, context levels, and stop conditions.
 - [Observability](docs/OBSERVABILITY.md): work receipts and decision traces.
+- [Source Of Truth](docs/SOURCE_OF_TRUTH.md): document authority map.
 
 ## Safety Note
 

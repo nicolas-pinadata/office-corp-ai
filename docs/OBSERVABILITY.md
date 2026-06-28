@@ -8,11 +8,11 @@ Multi-agent work is valuable only when it changes quality, risk, cost, speed, or
 
 OfficeCorp must distinguish between these modes:
 
-- **simulated_multi_agent**: one assistant applies multiple OfficeCorp roles internally.
-- **executed_multi_agent**: separate agents, workers, tools, or sessions perform assigned work.
-- **manual_workflow**: a human or tool operator applies OfficeCorp routing rules manually.
+- **simulated_multi_agent**: one assistant applies multiple OfficeCorp roles internally. The roles may challenge, validate, or revise the answer, but no separate worker executed the work.
+- **executed_multi_agent**: separate agents, workers, tool sessions, or delegated processes perform assigned work and return results.
+- **manual_workflow**: a human or tool operator applies OfficeCorp routing rules manually without claiming agent execution.
 
-Do not imply executed multi-agent work happened when the system only simulated roles inside one assistant response.
+Do not imply executed multi-agent work happened when the system only simulated roles inside one assistant response. Phrases like "agents executed", "workers completed", or "the team ran" require `executed_multi_agent` evidence. In simulated mode, prefer "roles applied", "reviewed as", "challenged by", or "validated through".
 
 ## Work Receipt
 
@@ -47,6 +47,8 @@ Work receipt:
 - Budget: Lean
 - Why only one agent: low-risk direct answer
 ```
+
+See [WORK_RECEIPT_EXAMPLES.md](WORK_RECEIPT_EXAMPLES.md) for Lean, Standard, Deep Work, Audit, good, and weak examples.
 
 ## Agent Contribution Delta
 
@@ -107,7 +109,7 @@ Task ownership:
 - QA: done
 ```
 
-Do not imply separate execution when the mode was simulated. In simulated mode, task ownership means role ownership inside one assistant run. In executed mode, task ownership means a separate worker, tool session, or agent actually performed that task.
+Do not imply separate execution when the mode was simulated. In simulated mode, task ownership means role ownership inside one assistant run. In executed mode, task ownership means a separate worker, tool session, or agent actually performed that task. In manual workflow mode, task ownership means the human or tool operator followed that OfficeCorp role's checklist.
 
 ## Decision Trace
 

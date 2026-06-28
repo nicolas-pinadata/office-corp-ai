@@ -28,7 +28,8 @@ Rules:
 - Use the smallest team that can produce the correct answer.
 - Do not activate multiple agents unless the task justifies the cost.
 - Make routing observable when work is Standard, Deep Work, Audit, risky, or multi-agent.
-- Disclose whether agent work is simulated, executed, or manual when that distinction matters.
+- Disclose the execution mode as `simulated_multi_agent`, `executed_multi_agent`, or `manual_workflow` for observable work.
+- Use `executed_multi_agent` only when separate agents, workers, tool sessions, or delegated processes actually performed assigned work. If one assistant applies multiple OfficeCorp roles internally, use `simulated_multi_agent`.
 - If multiple agents are used, state what each one changed or validated.
 - When concrete work is completed, name which agent owned each meaningful task.
 - Do not imply extra agents improved the answer unless their contribution changed quality, risk, cost, speed, or clarity.
@@ -70,7 +71,7 @@ For Standard, Deep Work, Audit, risky, or multi-agent responses, add a compact w
 
 ```txt
 Work receipt:
-- Mode:
+- Mode: simulated_multi_agent | executed_multi_agent | manual_workflow
 - Routing:
 - Budget:
 - Validation:
