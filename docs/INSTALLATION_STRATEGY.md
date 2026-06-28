@@ -1,33 +1,10 @@
 # Installation Strategy
 
-OfficeCorp.ai is a portable, file-based company framework.
+OfficeCorp.ai is a portable, file-based company framework. The recommended downstream setup is to vendor the full OfficeCorp package into the project and copy the root agent instruction file beside the project's normal source files.
 
-Its core value is a set of readable, copyable operating files that any AI tool, LLM Provider, interface, or human can inspect, version, and modify.
+## Recommended Project Structure
 
-## Recommended Installation Shape
-
-Use `.officecorp/` as the portable control folder for a project or workspace:
-
-```txt
-.officecorp/
-  config.yml
-  current-state.md
-  routing.yml
-  token-budget.yml
-```
-
-Optional context may be added when it improves reuse:
-
-```txt
-.officecorp/
-  project-brief.md
-  decisions/
-  playbooks/
-```
-
-## Agent Integration
-
-For coding agents, install OfficeCorp as readable local project guidance:
+Install OfficeCorp as readable local project guidance:
 
 ```txt
 target-project/
@@ -41,22 +18,73 @@ target-project/
     skills/
 ```
 
-Copy `office-corp/` into the target project. Then copy or adapt the provided root `AGENTS.md` into the target project root. Other ecosystem templates are available in `templates/agents/`:
+The root `AGENTS.md` is the discovery hook. It tells coding agents to:
 
-- `AGENTS.md`
-- `CLAUDE.md`
-- `cursor-rules.md`
-
-Agents should treat OfficeCorp as local project guidance. The expected flow is:
-
-1. Read `office-corp/README.md`.
-2. Route the task with `office-corp/routing/TASK_ROUTER.md`.
+1. Read `office-corp/README.md` first.
+2. Route the request through `office-corp/routing/TASK_ROUTER.md`.
 3. Load only relevant context from `office-corp/docs`, `office-corp/agents`, `office-corp/playbooks`, and `office-corp/skills`.
 4. For non-trivial work, mention the OfficeCorp route/context used in the final answer.
 
-OfficeCorp instructions never override higher-priority system, developer, platform, or user instructions.
+OfficeCorp instructions never override higher-priority system, developer, platform, or user instructions. Do not copy the source repository's `.git` directory into the downstream `office-corp/` folder.
 
 See `docs/AGENT_INTEGRATION.md` for the expected agent behavior.
+
+## Installation Procedure
+
+Run the install from the downstream project root. The same commands can be used later to refresh OfficeCorp.
+
+Windows PowerShell:
+
+```powershell
+git clone https://github.com/nicolas-pinadata/office-corp-ai .tmp-office-corp-ai
+robocopy .tmp-office-corp-ai office-corp /E /XD .git
+Copy-Item .tmp-office-corp-ai\AGENTS.md AGENTS.md
+Remove-Item -Recurse -Force .tmp-office-corp-ai
+git add AGENTS.md office-corp
+git commit -m "Update OfficeCorp agent integration"
+```
+
+`robocopy` may return `1` when files were copied successfully. Treat return codes below `8` as non-fatal.
+
+macOS/Linux:
+
+```sh
+git clone https://github.com/nicolas-pinadata/office-corp-ai .tmp-office-corp-ai
+rsync -a --delete --exclude .git .tmp-office-corp-ai/ office-corp/
+cp .tmp-office-corp-ai/AGENTS.md AGENTS.md
+rm -rf .tmp-office-corp-ai
+git add AGENTS.md office-corp
+git commit -m "Update OfficeCorp agent integration"
+```
+
+## Update Procedure
+
+To update OfficeCorp in a downstream project:
+
+1. Clone the current OfficeCorp source into a temporary folder.
+2. Copy it over the downstream `office-corp/` folder while excluding `.git`.
+3. Refresh the downstream root `AGENTS.md` from the OfficeCorp source.
+4. Remove the temporary clone.
+5. Review the diff, then commit `AGENTS.md` and `office-corp/`.
+
+The PowerShell `robocopy /E` command preserves downstream files that are no longer present upstream. For an exact mirror update, replace `/E` with `/MIR`, but only if `office-corp/` contains no downstream-only files you need to keep.
+
+If the downstream project has intentionally customized `AGENTS.md`, merge the new OfficeCorp instructions instead of overwriting local project-specific guidance.
+
+## Expected Agent Behavior
+
+After installation, ask the coding agent a normal project question. The expected behavior is:
+
+1. Discover OfficeCorp through root `AGENTS.md`.
+2. Read `office-corp/README.md`.
+3. Route through `office-corp/routing/TASK_ROUTER.md`.
+4. Load only the relevant files from `office-corp/docs`, `office-corp/agents`, `office-corp/playbooks`, and `office-corp/skills`.
+5. Keep OfficeCorp subordinate to higher-priority system, developer, platform, and user instructions.
+6. Mention the OfficeCorp route/context used in final answers for non-trivial work.
+
+## Optional Project Context
+
+Projects may add their own context outside `office-corp/`, such as `.officecorp/project-brief.md`, decision records, or workspace notes. These files are optional. OfficeCorp must still work from the request, root `AGENTS.md`, and the local `office-corp/` package when no extra project context exists.
 
 ## Workspace Structure
 

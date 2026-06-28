@@ -1,17 +1,30 @@
 # Agent Integration
 
-OfficeCorp can be installed into any project as local governance for coding agents. Agents should use it as project context, subordinate to system, developer, platform, and user instructions.
+OfficeCorp can be installed into any downstream project as local governance for coding agents. The recommended setup is:
+
+```txt
+target-project/
+  AGENTS.md
+  office-corp/
+    README.md
+    routing/
+    docs/
+    agents/
+    playbooks/
+    skills/
+```
+
+Agents should use OfficeCorp as project guidance, subordinate to system, developer, platform, and user instructions.
 
 ## Discovery
 
-When a project contains `office-corp/`, agents should treat it as available project guidance.
+Agents discover OfficeCorp through the downstream root `AGENTS.md`. That file should point to the local `office-corp/` package and instruct the agent to:
 
-Start with:
+1. Read `office-corp/README.md`.
+2. Route through `office-corp/routing/TASK_ROUTER.md`.
+3. Load only relevant context from `office-corp/docs`, `office-corp/agents`, `office-corp/playbooks`, and `office-corp/skills`.
 
-1. `office-corp/README.md`
-2. `office-corp/routing/TASK_ROUTER.md`
-
-If the project root contains `AGENTS.md`, `CLAUDE.md`, Cursor rules, or another agent instruction file that points to OfficeCorp, follow that file as the integration entry point.
+If a provider uses another instruction file, such as `CLAUDE.md` or Cursor rules, keep it consistent with the same discovery flow.
 
 ## Routing
 

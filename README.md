@@ -264,11 +264,7 @@ See [docs/LANGUAGE_POLICY.md](docs/LANGUAGE_POLICY.md) for multilingual behavior
 
 ## Installing OfficeCorp In Another Project
 
-OfficeCorp.ai can be copied into any project or workspace as a lightweight company-governance layer.
-
-### Agent Integration
-
-Agent-oriented install:
+Install OfficeCorp as a readable local package inside the downstream project:
 
 ```txt
 target-project/
@@ -282,53 +278,33 @@ target-project/
     skills/
 ```
 
-Copy this repository into the target project as `office-corp/`, then copy or adapt the provided root [AGENTS.md](AGENTS.md) into the target project root. Agent-specific templates are available in [templates/agents/](templates/agents/), including `AGENTS.md`, `CLAUDE.md`, and `cursor-rules.md`.
+The downstream root `AGENTS.md` is the discovery hook. It tells coding agents to read `office-corp/README.md`, route through `office-corp/routing/TASK_ROUTER.md`, then load only relevant context from `office-corp/docs`, `office-corp/agents`, `office-corp/playbooks`, and `office-corp/skills`.
 
-Coding agents should treat OfficeCorp as local project guidance. They should read `office-corp/README.md`, route the task through `office-corp/routing/TASK_ROUTER.md`, then load only the relevant files from `office-corp/docs`, `office-corp/agents`, `office-corp/playbooks`, and `office-corp/skills`.
+Do not copy the source repository's `.git` directory into `office-corp/`. OfficeCorp remains subordinate to system, developer, platform, and user instructions. For non-trivial work, final answers should mention the OfficeCorp route/context used.
 
-OfficeCorp instructions never override higher-priority system, developer, platform, or user instructions. See [docs/AGENT_INTEGRATION.md](docs/AGENT_INTEGRATION.md).
+PowerShell install/update example:
 
-Minimal install:
-
-```txt
-.officecorp/
-  config.yml
-  current-state.md
-  routing.yml
-  token-budget.yml
+```powershell
+git clone https://github.com/nicolas-pinadata/office-corp-ai .tmp-office-corp-ai
+robocopy .tmp-office-corp-ai office-corp /E /XD .git
+Copy-Item .tmp-office-corp-ai\AGENTS.md AGENTS.md
+Remove-Item -Recurse -Force .tmp-office-corp-ai
+git add AGENTS.md office-corp
+git commit -m "Update OfficeCorp agent integration"
 ```
 
-Recommended optional files:
+macOS/Linux equivalent:
 
-```txt
-.officecorp/
-  project-brief.md
-  decisions/
-  playbooks/
+```sh
+git clone https://github.com/nicolas-pinadata/office-corp-ai .tmp-office-corp-ai
+rsync -a --delete --exclude .git .tmp-office-corp-ai/ office-corp/
+cp .tmp-office-corp-ai/AGENTS.md AGENTS.md
+rm -rf .tmp-office-corp-ai
+git add AGENTS.md office-corp
+git commit -m "Update OfficeCorp agent integration"
 ```
 
-Workspace-oriented structure:
-
-```txt
-workspaces/
-  {workspace-name}/
-    docs/
-    research/
-    roadmap/
-    architecture/
-    ux/
-    product/
-    marketing/
-    decisions/
-```
-
-OfficeCorp must work even when optional files are missing:
-
-- **Level 1 - No workspace context**: use the request and default OfficeCorp operating model.
-- **Level 2 - Basic workspace context**: use `.officecorp/config.yml` and `.officecorp/current-state.md` if they exist.
-- **Level 3 - Rich workspace context**: use workspace docs, playbooks, decisions, and domain documentation when available.
-
-OfficeCorp.ai works as a portable Git toolkit made of readable files. See [docs/INSTALLATION_STRATEGY.md](docs/INSTALLATION_STRATEGY.md).
+See [docs/INSTALLATION_STRATEGY.md](docs/INSTALLATION_STRATEGY.md) for the full downstream adoption procedure and [docs/AGENT_INTEGRATION.md](docs/AGENT_INTEGRATION.md) for expected agent behavior.
 
 ## Architecture Documents
 
