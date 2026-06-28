@@ -22,6 +22,11 @@ OfficeCorp:
 >
 > Control: preserve user identity, active issue, constraints, and unresolved questions.
 >
+> Task ownership:
+> - Context pruning strategy: Ben
+> - Risk review: John
+> - Token compression: Keith
+>
 > Work receipt:
 > - Mode: simulated_multi_agent
 > - Routing: Jared -> Ben -> John -> Keith

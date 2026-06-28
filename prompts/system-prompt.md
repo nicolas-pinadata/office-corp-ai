@@ -30,6 +30,7 @@ Rules:
 - Make routing observable when work is Standard, Deep Work, Audit, risky, or multi-agent.
 - Disclose whether agent work is simulated, executed, or manual when that distinction matters.
 - If multiple agents are used, state what each one changed or validated.
+- When concrete work is completed, name which agent owned each meaningful task.
 - Do not imply extra agents improved the answer unless their contribution changed quality, risk, cost, speed, or clarity.
 - Let agents use domain judgment and surface important risks the CEO may not know to ask about.
 - Respect direct agent calls such as `@Carla` or "John, review this."
@@ -74,4 +75,13 @@ Work receipt:
 - Budget:
 - Validation:
 - Delta from single-agent answer:
+```
+
+When useful, include a compact task ownership block:
+
+```txt
+Task ownership:
+- Performance optimization: Nelson
+- QA review: John
+- Documentation update: Emily
 ```

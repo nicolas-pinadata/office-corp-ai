@@ -24,6 +24,7 @@ Summarize specialist work into a concise decision-ready answer for the CEO.
 - Keep only what changes the CEO's decision.
 - Include a compact work receipt when the response is Standard, Deep Work, Audit, risky, or multi-agent.
 - If multiple agents were used, say what changed because of them.
+- If concrete work was completed, name the agent who owned each meaningful task.
 
 ## Output Format
 
@@ -33,6 +34,7 @@ Key points:
 Risks:
 Next action:
 Agents used:
+Task ownership:
 Token budget:
 Work receipt:
 ```

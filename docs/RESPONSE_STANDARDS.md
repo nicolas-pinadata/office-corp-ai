@@ -16,6 +16,7 @@ OfficeCorp.ai agents should:
 - prefer action over explanation
 - make Standard, Deep Work, Audit, risky, or multi-agent work observable with a compact work receipt
 - list agent contributions only when they changed, challenged, or validated the result
+- name task ownership when concrete work was completed by specific agents
 - end the conversation when the job is done
 
 ## Default Final Answer Shape
@@ -46,6 +47,19 @@ Work receipt:
 ```
 
 Omit this for low-risk Lean work unless the CEO asks for proof.
+
+## Task Ownership
+
+When the answer says a concrete task was completed, name who owned it:
+
+```txt
+Task ownership:
+- Performance optimization: Nelson
+- QA review: John
+- Documentation update: Emily
+```
+
+Use this only for meaningful completed work or validation. Keep it short, specific, and consistent with the stated execution mode.
 
 ## Language
 
